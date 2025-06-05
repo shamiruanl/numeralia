@@ -1,0 +1,516 @@
+﻿
+@{
+    ViewBag.Title = "Generar Factura";
+    ViewBag.pTitle = "Generar Factura";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Detalle del servicio -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Detalle del Servicio</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="noServicio">No. Servicio</label>
+                                <input id="" name="noServicio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-1">
+                            <div class="" style="margin-top: 28px;">
+                                <button type="button" class="btn btn-info waves-effect waves-light" style="">Buscar</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="" style="margin-top: 28px;">
+                                <button type="button" class="btn btn-secondary waves-effect waves-light" style="">Búsqueda Avanzada</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Emisor -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Emisor</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Razón Social</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">RFC</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Régimen Fiscal</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Calle y Número</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Colonia</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">CP</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Municipio</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estado</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">País</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Lugar de Expedición</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Tipo de Comprobante</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Receptor -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Receptor</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">RFC</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Cliente</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Calle y Número</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Calle y Número</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Colonia</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">CP</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Municipio</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estado</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label control-label">País</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Configuración de Factura -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Configuración de Factura</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Forma de Pago</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Método de Pago</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Uso de CFDI</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Moneda</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Tipo de Cambio</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="form-check form-switch mb-3" dir="ltr" style="margin-top: 35px;">
+                                <label class="form-check-label" for="customSwitch1">Envió de factura</label>
+                                <input type="checkbox" class="form-check-input" id="customSwitch1" checked>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Servicios -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Servicios</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12" style="text-align: right; margin-bottom: 20px;">
+                            <button type="button" class="btn btn-success waves-effect waves-light" style="">Agregar</button>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="table-info">
+                                        <tr>
+                                            <th>Cantidad</th>
+                                            <th>Descripción</th>
+                                            <th>Importe</th>
+                                            <th>Descuento</th>
+                                            <th>IVA</th>
+                                            <th>Retención</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>$ 4,400.00</td>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 2,000.00</td>
+                                            <td>20%</td>
+                                            <td>30%</td>
+                                            <td>$ 1,000.00</td>
+                                            <td>$ 3,400.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$ 4,400.00</td>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 2,000.00</td>
+                                            <td>20%</td>
+                                            <td>30%</td>
+                                            <td>$ 1,000.00</td>
+                                            <td>$ 3,400.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$ 4,400.00</td>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 2,000.00</td>
+                                            <td>20%</td>
+                                            <td>30%</td>
+                                            <td>$ 1,000.00</td>
+                                            <td>$ 3,400.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cargos -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Cargos</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Monto Servicio</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Cargos Adicionales</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Descuento</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Descripción</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Subtotal</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">IVA</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Retención</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">Total</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Agenda -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d;">
+                <h4 class="card-title" style="color: #FFF; margin: 0;">Agenda</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="mb-3">
+                                <label>Descrpción</label>
+                                <textarea required class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Acciones -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="row" style="text-align: center;">
+                        <div class="col-xl-3">
+                            <div class="">
+                                <button type="button" class="btn btn-primary waves-effect waves-light" style="">Ver Pre-factura</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="">
+                                <button type="button" class="btn btn-info waves-effect waves-light" style="">Enviar Pre-factura</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="">
+                                <button type="button" class="btn btn-warning waves-effect waves-light" style="">Escalar facturación</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="">
+                                <button type="button" class="btn btn-success waves-effect waves-light" style="">Generar factura</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

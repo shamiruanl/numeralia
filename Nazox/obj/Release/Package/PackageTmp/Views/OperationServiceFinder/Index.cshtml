@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Buscador de Servicios";
+    ViewBag.pTitle = "Buscador de Servicio";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Filtros -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Filtros</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="noServicio">LoadId</label>
+                                <input id="" name="noServicio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="noServicio">Guía Prov.</label>
+                                <input id="" name="noServicio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Cliente</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Proveedor</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estatus</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="noServicio">Desde</label>
+                                <input id="" name="noServicio" type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="noServicio">Hasta</label>
+                                <input id="" name="noServicio" type="date" class="form-control">
+                            </div>
+                        </div>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabla -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="table-info">
+                            <tr>
+                                <th>LoadId</th>
+                                <th>Guía Prov.</th>
+                                <th>Servicio</th>
+                                <th>Cliente</th>
+                                <th>Proveedor</th>
+                                <th>Shipper</th>
+                                <th>Dom. Origen</th>
+                                <th>Consignee</th>
+                                <th>Dom. Destino</th>
+                                <th>Estatus</th>
+                                <th>ETA</th>
+                                <th>EPOD</th>
+                                <th>RTA</th>
+                                <th>RPOD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>879893</td>
+                                <td>G-349483</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Pedro Garza</td>
+                                <td>Bimbo</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>Transportes</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>En proceso</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>879893</td>
+                                <td>G-349483</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Pedro Garza</td>
+                                <td>Bimbo</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>Transportes</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>En proceso</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>879893</td>
+                                <td>G-349483</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Pedro Garza</td>
+                                <td>Bimbo</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>Transportes</td>
+                                <td>Morelos #939, Col. Centro</td>
+                                <td>En proceso</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

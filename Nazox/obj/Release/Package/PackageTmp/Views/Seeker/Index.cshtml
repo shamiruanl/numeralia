@@ -1,0 +1,448 @@
+﻿
+@{
+    ViewBag.Title = "Buscar Factura";
+    ViewBag.pTitle = "Buscar Factura";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Filtros -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Filtros</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Factura</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="cliente">Cliente</label>
+                                <input id="" name="cliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="rfc">RFC</label>
+                                <input id="" name="rfc" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estatus</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Activo</option>
+                                    <option value="">Inactivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Centro de Servicio</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Servicio 1</option>
+                                    <option value="">Servicio 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="" style="margin-top: 28px;">
+                                <button type="button" class="btn btn-info waves-effect waves-light" style="">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Informacion facturas -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Infomración Facturas</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead class="table-info">
+                                    <tr>
+                                        <th>Servicio</th>
+                                        <th>Cliente</th>
+                                        <th>RFC</th>
+                                        <th>Estatus</th>
+                                        <th>Número de Factura</th>
+                                        <th>Fecha de Servicio</th>
+                                        <th>Fecha de Timbrado</th>
+                                        <th>Enviado</th>
+                                        <th>Fecha Envió</th>
+                                        <th>Correo de Envió</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Fabrica de software</th>
+                                        <td>OXXO</td>
+                                        <td>OXXO123632DA</td>
+                                        <td>Pendiente</td>
+                                        <td>312334</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Pendiente</td>
+                                        <td>10/02/2021</td>
+                                        <td>oxxo@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Fabrica de software</th>
+                                        <td>OXXO</td>
+                                        <td>OXXO123632DA</td>
+                                        <td>Pendiente</td>
+                                        <td>312334</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Pendiente</td>
+                                        <td>10/02/2021</td>
+                                        <td>oxxo@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Fabrica de software</th>
+                                        <td>OXXO</td>
+                                        <td>OXXO123632DA</td>
+                                        <td>Pendiente</td>
+                                        <td>312334</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Pendiente</td>
+                                        <td>10/02/2021</td>
+                                        <td>oxxo@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Fabrica de software</th>
+                                        <td>OXXO</td>
+                                        <td>OXXO123632DA</td>
+                                        <td>Pendiente</td>
+                                        <td>312334</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Pendiente</td>
+                                        <td>10/02/2021</td>
+                                        <td>oxxo@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Fabrica de software</th>
+                                        <td>OXXO</td>
+                                        <td>OXXO123632DA</td>
+                                        <td>Pendiente</td>
+                                        <td>312334</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Pendiente</td>
+                                        <td>10/02/2021</td>
+                                        <td>oxxo@gmail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detalle del servicio -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Detalle del Servicio</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="mb-3">
+                                <label class="form-label" for="noFactura">No. Factura</label>
+                                <input id="" name="noFactura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="mb-3">
+                                <label class="form-label" for="descripcionServicio">Descripción del Servicio</label>
+                                <input id="" name="descripcionServicio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Fecha Fin</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="noCliente">No. Cliente</label>
+                                <input id="" name="noCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label" for="nombreCliente">Nombre del Cliente</label>
+                                <input id="" name="nombreCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Crédito / Contado</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Crédito</option>
+                                    <option value="">Contado</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="diasCredito">Días de Crédito</label>
+                                <input id="" name="diasCredito" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="table-info">
+                                        <tr>
+                                            <th>Servicio</th>
+                                            <th>Costo</th>
+                                            <th>Fecha</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 1,000.00</td>
+                                            <td>01/01/2021</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 1,000.00</td>
+                                            <td>01/01/2021</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fabrica de software</th>
+                                            <td>$ 1,000.00</td>
+                                            <td>01/01/2021</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mt-3" style="text-align:right;">
+                            <button type="button" class="btn btn-success waves-effect waves-light">Generar factura</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detalle factura -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Detalle de la factura</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="mb-3">
+                                <label class="form-label" for="folio">Folio</label>
+                                <input id="" name="folio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="mb-3">
+                                <label class="form-label" for="serie">Serie</label>
+                                <input id="" name="serie" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">RFC Emisor</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="noCliente">Emisor</label>
+                                <input id="" name="noCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="nombreCliente">Lugar de Expedición</label>
+                                <input id="" name="nombreCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Tipo de Comprobante</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="noCliente">UUDI</label>
+                                <input id="" name="noCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="nombreCliente">No. Certificado</label>
+                                <input id="" name="nombreCliente" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="mb-3">
+                                <label class="form-label" for="folio">Fecha Timbrado</label>
+                                <input id="" name="folio" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="mb-3">
+                                <label class="form-label" for="serie">Servicio</label>
+                                <input id="" name="serie" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Uso CFDI</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">CFDI 1</option>
+                                    <option value="">CFDI 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Forma de Pago</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Pago 1</option>
+                                    <option value="">Pago 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Método de Pago</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Pago 1</option>
+                                    <option value="">Pago 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Moneda</label>
+                                <select class="form-control select2" style="">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">Moneda 1</option>
+                                    <option value="">Moneda 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Costo de servicio</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Cargos Ad</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Descuento</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Subtotal</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">IVA</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="mb-3">
+                                <label class="form-label" for="fechaFin">Total</label>
+                                <input id="" name="fechaFin" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mt-3" style="text-align:right;">
+                            <button type="button" class="btn btn-success waves-effect waves-light">Auditar factura</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

@@ -1,0 +1,237 @@
+﻿
+@{
+    ViewBag.Title = "Buscar Compras";
+    ViewBag.pTitle = "Buscar Compras";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Filtros -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Filtros</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Rquisición</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Orden de Compra</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Producto/Servicio</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estatus</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabla -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="table-info">
+                            <tr>
+                                <th>Id</th>
+                                <th>Producto/Servicio</th>
+                                <th>Estatus</th>
+                                <th>Proveedor</th>
+                                <th>Requisición de Compra</th>
+                                <th>Orden de Compara</th>
+                                <th>Inicio de Requisición</th>
+                                <th>Generación de Orden de Compra</th>
+                                <th>Envío de Orden de Compra</th>
+                                <th>Correo de Envió</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Req. Aprobación</td>
+                                <td>Proveedor 1</td>
+                                <td>REQ-83673</td>
+                                <td>OC8373</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>jose@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Req. Aprobación</td>
+                                <td>Proveedor 1</td>
+                                <td>REQ-83673</td>
+                                <td>OC8373</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>jose@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Req. Aprobación</td>
+                                <td>Proveedor 1</td>
+                                <td>REQ-83673</td>
+                                <td>OC8373</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>01/01/2021</td>
+                                <td>jose@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detalle del Adeudo -->
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Comentarios del Usuario</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Motivo de Requisición:</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">En esta sección se muestra el motivo, causa o necesidad que justifica la solicitud de requisición de compra.</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Comentarios Adicionales:</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Comentarios adicionales del usuario...</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Comentarios del Comprador</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">En esta sección se muestran los comentarios del comprador.</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Aqui se muestran los motivos del rechazo y otros comentarios relevantes del comprador.</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Comentarios del Proveedor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">En esta sección se muestran los comentarios del proveedor que agrega desde el portal de proveedores.</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

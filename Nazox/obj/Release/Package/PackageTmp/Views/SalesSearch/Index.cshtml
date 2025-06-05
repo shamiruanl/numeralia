@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Buscar Ventas";
+    ViewBag.pTitle = "Buscar Ventas";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Filtros -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Filtros</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Venta</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Cliente / Prospecto</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>                        
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label control-label">Estatus</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabla -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="table-info">
+                            <tr>
+                                <th>Venta</th>
+                                <th>Producto / Servicio</th>
+                                <th>Estatus Venta</th>
+                                <th>Tipo de Pago</th>
+                                <th>Comprador</th>
+                                <th>Tipo Comprador</th>
+                                <th>Fecha Venta</th>
+                                <th>Vendedor</th>
+                                <th>Próximo Seguimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Completo</td>
+                                <td>Cliente o Negocio</td>
+                                <td>Cliente Nuevo</td>
+                                <td>01/01/2021</td>
+                                <td>Vendedor</td>
+                                <td>01/01/2021</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Completo</td>
+                                <td>Cliente o Negocio</td>
+                                <td>Cliente Nuevo</td>
+                                <td>01/01/2021</td>
+                                <td>Vendedor</td>
+                                <td>01/01/2021</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Compra 1</td>
+                                <td>Completo</td>
+                                <td>Cliente o Negocio</td>
+                                <td>Cliente Nuevo</td>
+                                <td>01/01/2021</td>
+                                <td>Vendedor</td>
+                                <td>01/01/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detalles -->
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Comentarios del Cliente / Prospecto:</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Motivo de Requisición:</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">En esta sección se muestra el motivo, causa o necesidad que justifica la solicitud de requisición de compra.</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Comentarios Adicionales:</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Comentarios adicionales del usuario...</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Comentarios del Vendedor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">En esta sección se muestran los comentarios del comprador.</label>
+                        </div>
+                        <div class="col-xl-12">
+                            <label class="form-label" for="factura">Aqui se muestran los motivos del rechazo y otros comentarios relevantes del comprador.</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

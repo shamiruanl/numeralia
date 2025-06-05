@@ -1,0 +1,298 @@
+﻿
+@{
+    ViewBag.Title = "Buscar Clientes";
+    ViewBag.pTitle = "Buscar Clientes";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Filtros -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Filtros</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                        <button type="button" class="btn btn-info waves-effect waves-light" style="height: 25px; line-height: 0;">Nuevo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">No. Cliente</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Cliente</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Prospecto</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Teléfono</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Correo</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabla -->
+<div class="row">   
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table mb-0">
+                            <thead class="table-info">
+                                <tr>
+                                    <th>No. Cliente</th>
+                                    <th>Nombre Comercial</th>
+                                    <th>Contacto Principal</th>
+                                    <th>Tipo de Cliente</th>
+                                    <th>Teléfono Principal</th>
+                                    <th>Correo</th>
+                                    <th>RFC</th>
+                                    <th>Giro de Negocio</th>
+                                    <th>Fecha de Ultima Venta/Servicio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jose Luis Perez</td>
+                                    <td>Luis Gomez</td>
+                                    <td>Nuevo</td>
+                                    <td>9284389734</td>
+                                    <td>jose@gmail.com</td>
+                                    <td>FRE25TH4543</td>
+                                    <td>Ferreteria</td>
+                                    <td>01/01/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jose Luis Perez</td>
+                                    <td>Luis Gomez</td>
+                                    <td>Nuevo</td>
+                                    <td>9284389734</td>
+                                    <td>jose@gmail.com</td>
+                                    <td>FRE25TH4543</td>
+                                    <td>Ferreteria</td>
+                                    <td>01/01/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jose Luis Perez</td>
+                                    <td>Luis Gomez</td>
+                                    <td>Nuevo</td>
+                                    <td>9284389734</td>
+                                    <td>jose@gmail.com</td>
+                                    <td>FRE25TH4543</td>
+                                    <td>Ferreteria</td>
+                                    <td>01/01/2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Domicilos / Contactos -->
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Domicilios</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="table-info">
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Descripción</th>
+                                            <th>Calle y No.</th>
+                                            <th>Colonia</th>
+                                            <th>CP</th>
+                                            <th>Municipio</th>
+                                            <th>Estado</th>
+                                            <th>País</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Casa de color azul</td>
+                                            <td>Villagran #0202</td>
+                                            <td>Del Prado</td>
+                                            <td>84638</td>
+                                            <td>Monterrey</td>
+                                            <td>Nuevo León</td>
+                                            <td>México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Casa de color azul</td>
+                                            <td>Villagran #0202</td>
+                                            <td>Del Prado</td>
+                                            <td>84638</td>
+                                            <td>Monterrey</td>
+                                            <td>Nuevo León</td>
+                                            <td>México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Casa de color azul</td>
+                                            <td>Villagran #0202</td>
+                                            <td>Del Prado</td>
+                                            <td>84638</td>
+                                            <td>Monterrey</td>
+                                            <td>Nuevo León</td>
+                                            <td>México</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Contactos</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="table-info">
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Descripción</th>
+                                            <th>Nombre</th>
+                                            <th>Apellido Paterno</th>
+                                            <th>Apellido Materno</th>
+                                            <th>Tel. Fijo</th>
+                                            <th>Tel. Movil</th>
+                                            <th>Correo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Teléfono principal</td>
+                                            <td>Pedro</td>
+                                            <td>Martinez</td>
+                                            <td>Martinez</td>
+                                            <td>836384244</td>
+                                            <td>990058633</td>
+                                            <td>pedro@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Teléfono principal</td>
+                                            <td>Pedro</td>
+                                            <td>Martinez</td>
+                                            <td>Martinez</td>
+                                            <td>836384244</td>
+                                            <td>990058633</td>
+                                            <td>pedro@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Teléfono principal</td>
+                                            <td>Pedro</td>
+                                            <td>Martinez</td>
+                                            <td>Martinez</td>
+                                            <td>836384244</td>
+                                            <td>990058633</td>
+                                            <td>pedro@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

@@ -1,0 +1,430 @@
+﻿
+@{
+    ViewBag.Title = "Programar Servicio";
+    ViewBag.pTitle = "Programar Servicio";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Solicitud del Servicio -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Solicitud del Servicio</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align: right;">
+                        <button type="button" class="btn btn-info waves-effect waves-light" style="height: 25px; line-height: 0;">Guardar Solicitud</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">LoadId</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Cliente (Razón Social)</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Contacto</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Origen</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Destino</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Mercancía</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Costo</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Moneda</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Condición de Pago</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Días de Crédito</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Asignación de Proveedores -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Asignación de Proveedores</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align: right;">
+                        <button type="button" class="btn btn-info waves-effect waves-light" style="height: 25px; line-height: 0;">Agregar Proveedor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Tipo de Servicio</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Detalle de Servicio</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Shipper</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Domicilio Shipper</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Contacto Shipper</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Consignee</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Domicilio Consignee</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Contacto Consignee</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Proveedor</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Contacto de Proveedor</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Unidad de Proveedor</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Placas de Unidad</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">SCAC</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">CAAT</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Guía de Proveedor</label>
+                                <input id="" name="factura" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">ETA</label>
+                                <input id="" name="factura" type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Costo</label>
+                                <input id="" name="factura" type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Moneda</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Condición de Pago</label>
+                                <select class="form-control select2">
+                                    <option>--Seleccionar--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="factura">Días de Crédito</label>
+                                <input id="" name="factura" type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Resumen de Servicio -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Resumen de Servicio</h4>
+                    </div>                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="table-info">
+                            <tr>
+                                <th>Id</th>
+                                <th>Cliente</th>
+                                <th>Servicio</th>
+                                <th>Proveedor</th>
+                                <th>Costo Proveedor</th>
+                                <th>Costo Cliente</th>
+                                <th>Moneda</th>
+                                <th>ETA</th>
+                                <th>EPOD</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>879893</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Bimbo</td>
+                                <td>$ 1000.00</td>
+                                <td>$ 2000.00</td>
+                                <td>MXN</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>879893</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Bimbo</td>
+                                <td>$ 1000.00</td>
+                                <td>$ 2000.00</td>
+                                <td>MXN</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>879893</td>
+                                <td>Jose Luis Lopez</td>
+                                <td>Desarrollo de Software</td>
+                                <td>Bimbo</td>
+                                <td>$ 1000.00</td>
+                                <td>$ 2000.00</td>
+                                <td>MXN</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Acciones -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12" style="text-align:right;">
+                            <button type="button" class="btn btn-success waves-effect waves-light" style="height: 25px; line-height: 0;">Guardar Servicio</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Incio JS -->
+<!-- select 2 plugin -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+
+<!-- Fin JS -->

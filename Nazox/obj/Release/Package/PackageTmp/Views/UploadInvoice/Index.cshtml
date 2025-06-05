@@ -1,0 +1,281 @@
+﻿
+@{
+    ViewBag.Title = "Subir Factura";
+    ViewBag.pTitle = "Subir Factura";
+    Layout = "~/Views/_Shared/_Layout.cshtml";
+}
+
+<!-- Incio CSS -->
+<!-- select2 css -->
+<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<!-- Fin CSS -->
+
+<style>
+    input {
+        height: 30px;
+    }
+
+    .form-control {
+        height: 30px;
+        padding: .2rem .75rem;
+    }
+
+    .btn {
+        height: 30px;
+        line-height: 1;
+    }
+</style>
+
+<!-- Facturas -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Facturas</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                        <button type="button" class="btn btn-info waves-effect waves-light" style="height: 25px; line-height: 0;">Adjuntar Factura</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Filtros -->
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Proveedor</label>
+                            <select class="form-control select2">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Factura</label>
+                            <select class="form-control select2" style="">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Sucursal</label>
+                            <select class="form-control select2" style="">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabla -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead class="table-info">
+                                            <tr>
+                                                <th></th>
+                                                <th>Proveedor</th>
+                                                <th>Factura</th>
+                                                <th>Monto Factura</th>
+                                                <th>Estatus</th>
+                                                <th>Registro de Factura</th>
+                                                <th>Días de Credito</th>
+                                                <th>Comentarios del Auditor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>RG-3837</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Nueva</td>
+                                                <td>01/01/2021</td>
+                                                <td>12</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>RG-3837</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Nueva</td>
+                                                <td>01/01/2021</td>
+                                                <td>12</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>RG-3837</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Nueva</td>
+                                                <td>01/01/2021</td>
+                                                <td>12</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Servicios -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header" style="background-color: #59719d; padding: 5px 5px 5px 5px;">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h4 class="card-title" style="color:#FFF;margin:0; margin:3px;">Servicios</h4>
+                    </div>
+                    <div class="col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-light waves-effect waves-light" style="height: 25px; line-height: 0;">Buscar</button>
+                        <button type="button" class="btn btn-info waves-effect waves-light" style="height: 25px; line-height: 0;">Ligar Factura</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Filtros -->
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Proveedor</label>
+                            <select class="form-control select2">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Factura</label>
+                            <select class="form-control select2" style="">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="mb-3">
+                            <label class="form-label control-label">Sucursal</label>
+                            <select class="form-control select2" style="">
+                                <option>--Seleccionar--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabla -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead class="table-info">
+                                            <tr>
+                                                <th></th>
+                                                <th>Proveedor</th>
+                                                <th>Sucursal</th>
+                                                <th>Servicio</th>
+                                                <th>Monto Servicio</th>
+                                                <th>Estatus</th>
+                                                <th>Registro del Servicio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>Centro</td>
+                                                <td>Venta a domicilio</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Pendiente de Pago</td>
+                                                <td>01/01/2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>Centro</td>
+                                                <td>Venta a domicilio</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Pendiente de Pago</td>
+                                                <td>01/01/2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                    </div>
+                                                </td>
+                                                <td>Refaccionaria Martinez</td>
+                                                <td>Centro</td>
+                                                <td>Venta a domicilio</td>
+                                                <td>$ 16,000.00</td>
+                                                <td>Pendiente de Pago</td>
+                                                <td>01/01/2021</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Incio JS -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="~/assets/js/pages/form-validation.init.js"></script>
+<script src="~/assets/js/app.js"></script>
+<script src="~/assets/libs/select2/js/select2.min.js"></script>
+<!-- Fin JS -->
