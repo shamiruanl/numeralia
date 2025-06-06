@@ -1385,6 +1385,7 @@
     <Content Include="Views\_Shared\Layouts\_layout_icon_sidebar.cshtml" />
     <Content Include="Views\_Shared\Layouts\_layout_light_sidebar.cshtml" />
     <Content Include="Views\_Shared\Layouts\_layout_preloader.cshtml" />
+    <Content Include="Views\Dashboard\Index_OLD.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
