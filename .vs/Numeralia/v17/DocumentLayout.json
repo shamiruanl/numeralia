@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\xampp\\htdocs\\numeralia\\",
+  "WorkspaceRootPath": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\users\\yazmi\\onedrive\\documents\\facu\\servicio\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\xampp\\htdocs\\numeralia\\nazox\\views\\dashboard\\index_old.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\dashboard\\index_old.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\xampp\\htdocs\\numeralia\\nazox\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\xampp\\htdocs\\numeralia\\nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\xampp\\htdocs\\numeralia\\nazox\\controllers\\dashboard\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\controllers\\dashboard\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "RelativeToolTip": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T15:05:33.387Z"
+              "WhenOpened": "2025-06-09T15:05:33.387Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAKEBAAAAAAAAAAAiwK8BAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwM0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-09T14:19:28.682Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index_OLD.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index_OLD.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\Dashboard\\Index_OLD.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index_OLD.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index_OLD.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-10T02:07:50.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T15:05:41.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Controllers\\Dashboard\\DashboardController.cs",
-              "RelativeDocumentMoniker": "Nazox\\Controllers\\Dashboard\\DashboardController.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Controllers\\Dashboard\\DashboardController.cs",
-              "RelativeToolTip": "Nazox\\Controllers\\Dashboard\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T15:05:21.537Z"
             }
           ]
         }

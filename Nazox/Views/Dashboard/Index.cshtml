@@ -194,6 +194,7 @@
                 </div>
             </div>
 
+
             <!-- Gráfico de evolución más compacto -->
             <div class="col-xl-4">
                 <div class="card h-100">
@@ -220,12 +221,12 @@
                 </div>
             </div>
             <!-- end row -->
-
-            <h3 class="mt-4">Permisos de Construcción</h3>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
+        </div>
+        <h3 class="mt-4">Permisos de Construcción</h3>
+            <div class="row mx-auto">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="card flex-fill">
+                        <div class="card-body align-content-center">
                             <div class="d-flex">
                                 <div class="flex-1 overflow-hidden">
                                     <p class="text-truncate font-size-14 mb-2">Permiso a la confianza 24-27</p>
@@ -239,9 +240,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="card flex-fill">
+                        <div class="card-body align-content-center">
                             <div class="d-flex">
                                 <div class="flex-1 overflow-hidden">
                                     <p class="text-truncate font-size-14 mb-2">Monto de inversión</p>
@@ -255,9 +256,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="card flex-fill ">
+                        <div class="card-body align-content-center">
                             <div class="d-flex">
                                 <div class="flex-1 overflow-hidden">
                                     <p class="text-truncate font-size-14 mb-2">Trámites urbanísticos</p>
@@ -271,9 +272,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="card flex-fill">
+                        <div class="card-body align-content-center">
                             <div class="d-flex">
                                 <div class="flex-1 overflow-hidden">
                                     <p class="text-truncate font-size-14 mb-2">Revisión de solicitudes</p>
@@ -289,19 +290,14 @@
             </div>
             <!-- Sección de Proyectos Autorizados -->
             <h3 class="mt-4">Proyectos Autorizados</h3>
-            <!-- Título columna 1 -->
-            <div class="col-md-6 text-center mb-3 mt-3">
-                <h5 class="fw-bold text-black">Distribución por Tipo de Trámite</h5>
-            </div>
-            <!-- Título columna 2 -->
-            <div class="col-md-6 text-center pb-3 pt-3">
-                <h5 class="fw-bold text-black">Distribución por Tipo de Proyecto</h5>
-            </div>
-            <div class="row">
+            <div class="row mx-auto">
 
                 <!-- Gráfica de barras para vivienda en serie -->
-                <div class="col-lg-6">
-                    <div class="card">
+                <div class="col-lg-6 d-flex flex-column">
+                    <div class="text-center mb-3 mt-3">
+                        <h5 class="fw-bold text-black">Distribución por Tipo de Trámite</h5>
+                    </div>
+                    <div class="card flex-fill">
                         <div class="card-body">
                             <h4 class="card-title mb-4">Vivienda en Serie</h4>
                             <div id="tramites-barras-chart" class="apex-charts"></div>
@@ -311,11 +307,67 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <!-- Card 1 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Casa habitación</p>
+                                    <h5 class="mb-0 fw-bold text-dark">85</h5>
+                                </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M12 2L2 9v13h8v-6h4v6h8V9L12 2zm-1 15v-5h2v5h-2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Trámite menor</p>
+                                    <h5 class="mb-0 fw-bold text-dark">63</h5>
+                                </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Uso de suelo</p>
+                                    <h5 class="mb-0 fw-bold text-dark">42</h5>
+                                </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- División-->
+                @*<div class="col-auto d-none d-md-flex">
+                    <div class="vr border-start" style="border: 1px solid rgba(0,0,0,0.1);"></div>
                 </div>
 
+                <div class="col-12 d-md-none">
+                    <hr class="my-4">
+                </div>*@
                 <!-- Gráfica de pastel para naves industriales -->
-                <div class="col-lg-6">
-                    <div class="card">
+                <div class="col-lg-6 d-flex flex-column">
+                    <div class="text-center pb-3 pt-3">
+                        <h5 class="fw-bold text-black">Distribución por Tipo de Proyecto</h5>
+                    </div>
+                    <div class="card flex-fill">
                         <div class="card-body">
                             <h4 class="card-title mb-4">Naves Industriales</h4>
                             <div id="proyectos-pastel-chart" class="apex-charts"></div>
@@ -325,182 +377,131 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <!-- Columna 1 -->
-                <div class="col-md-6">
-                    <!-- Card 1 -->
-                    <div class="card mb-3 shadow" style="width 50%">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Casa habitación</p>
-                                <h5 class="mb-0 fw-bold text-dark">85</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12 2L2 9v13h8v-6h4v6h8V9L12 2zm-1 15v-5h2v5h-2z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card mb-3 shadow">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Trámite menor</p>
-                                <h5 class="mb-0 fw-bold text-dark">63</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card mb-3 shadow">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Uso de suelo</p>
-                                <h5 class="mb-0 fw-bold text-dark">42</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Columna 2 -->
-                <div class="col-md-6">
-                    <!-- Card 1 -->
-                    <div class="card mb-3 shadow">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Fraccionamientos</p>
-                                <h5 class="mb-0 fw-bold text-dark">35%</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card mb-3 shadow">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Industria</p>
-                                <h5 class="mb-0 fw-bold text-dark">22%</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card mb-3 shadow">
-                        <div class="d-flex align-items-center justify-content-between p-3">
-                            <div>
-                                <p class="mb-1 text-muted small">Comercio</p>
-                                <h5 class="mb-0 fw-bold text-dark">15%</h5>
-                            </div>
-                            <div class="text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card de Total -->
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <div class="card border-0 shadow-sm
-                             bg-white">
-                            <div class="card-body text-center p-4">
-                                <!-- Icono con color Bootstrap primary -->
-                                <div class="mb-3 text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    <div class="col">
+                        <!-- Card 1 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Fraccionamientos</p>
+                                    <h5 class="mb-0 fw-bold text-dark">35%</h5>
+                                </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
                                     </svg>
                                 </div>
-
-                                <!-- Texto con spacing de Bootstrap -->
-                                <p class="text-muted text-uppercase small mb-2 letter-spacing-1">
-                                    Proyectos autorizados
-                                </p>
-
-                                <!-- Número principal -->
-                                <h2 class="display-4 fw-bold text-dark mb-3 position-relative">
-                                    332
-                                    <span class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="width: 60px; height: 3px;"></span>
-                                </h2>
-
-                                <!-- Texto secundario minimalista -->
-                                <p class="text-muted small mb-0">
-                                    <i class="bi bi-calendar-check me-1"></i> Actualización: Junio 2023
-                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Sección de Ingresos Generados -->
-                <h3 class="mt-4">Ingresos Generados</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex">
-                                    <div class="flex-1 overflow-hidden">
-                                        <p class="text-truncate font-size-14 mb-2">Monto total de recaudación</p>
-                                        <h4 class="mb-0">$3,250,000</h4>
-                                    </div>
-                                    <div class="text-primary ms-auto">
-                                        <i class="ri-money-dollar-circle-line font-size-24"></i>
-                                    </div>
+                        <!-- Card 2 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Industria</p>
+                                    <h5 class="mb-0 fw-bold text-dark">22%</h5>
+                                </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex">
-                                    <div class="flex-1 overflow-hidden">
-                                        <p class="text-truncate font-size-14 mb-2">% crecimiento vs admin. previa</p>
-                                        <h4 class="mb-0">12.5%</h4>
-                                    </div>
-                                    <div class="text-primary ms-auto">
-                                        <i class="ri-line-chart-line font-size-24"></i>
-                                    </div>
+                        <!-- Card 3 -->
+                        <div class="card mb-3 shadow">
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <p class="mb-1 text-muted small">Comercio</p>
+                                    <h5 class="mb-0 fw-bold text-dark">15%</h5>
                                 </div>
-                                <div class="card-body border-top py-3">
-                                    <div class="text-truncate">
-                                        <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 3.8% </span>
-                                        <span class="text-muted ms-2">vs trimestre anterior</span>
-                                    </div>
+                                <div class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+                <!-- Card de Total -->
+            <div class="row mt-4 mx-auto">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow-sm
+                         bg-white">
+                        <div class="card-body text-center p-4">
+                            <!-- Icono con color Bootstrap primary -->
+                            <div class="mb-3 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </div>
+
+                            <!-- Texto con spacing de Bootstrap -->
+                            <p class="text-muted text-uppercase small mb-2 letter-spacing-1">
+                                Proyectos autorizados
+                            </p>
+
+                            <!-- Número principal -->
+                            <h2 class="display-4 fw-bold text-dark mb-3 position-relative">
+                                332
+                                <span class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="width: 60px; height: 3px;"></span>
+                            </h2>
+
+                            <!-- Texto secundario minimalista -->
+                            <p class="text-muted small mb-0">
+                                <i class="bi bi-calendar-check me-1"></i> Actualización: Junio 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Ingresos Generados -->
+            <h3 class="mt-4 ">Ingresos Generados</h3>
+            <div class="row mx-auto">
+                <div class="col-md-6 d-flex flex-column">
+                    <div class="card flex-fill">
+                        <div class="card-body align-content-center">
+                            <div class="d-flex">
+                                <div class="flex-1 overflow-hidden">
+                                    <p class="text-truncate font-size-14 mb-2">Monto total de recaudación</p>
+                                    <h4 class="mb-0">$3,250,000</h4>
+                                </div>
+                                <div class="text-primary ms-auto">
+                                    <i class="ri-money-dollar-circle-line font-size-24"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-1 overflow-hidden">
+                                    <p class="text-truncate font-size-14 mb-2">% crecimiento vs admin. previa</p>
+                                    <h4 class="mb-0">12.5%</h4>
+                                </div>
+                                <div class="text-primary ms-auto">
+                                    <i class="ri-line-chart-line font-size-24"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-top py-3">
+                                <div class="text-truncate">
+                                    <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 3.8% </span>
+                                    <span class="text-muted ms-2">vs trimestre anterior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <!-- TAB2 -->
             <div id="tab2" class="tab-content">
