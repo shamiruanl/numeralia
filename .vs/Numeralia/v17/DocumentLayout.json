@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\",
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\numeralia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\users\\yazmi\\onedrive\\documents\\facu\\servicio\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|C:\\xampp\\htdocs\\numeralia\\nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\authlockscreen\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -28,24 +28,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
+              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "RelativeToolTip": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T15:05:33.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T15:05:33.387Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAuwM0AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACIIAAAAAAAAAAAiwIMHAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-09T14:19:28.682Z",
               "EditorCaption": ""
