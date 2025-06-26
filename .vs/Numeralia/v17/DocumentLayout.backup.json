@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\AuthLockScreen\\Index.cshtml",
               "RelativeToolTip": "Nazox\\Views\\AuthLockScreen\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T15:05:33.387Z"
+              "WhenOpened": "2025-06-09T15:05:33.387Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -42,9 +43,9 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml*",
-              "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml*",
-              "ViewState": "AgIAABgLAAAAAAAAAAAowCcLAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAPoLAAAAAAAAAAAAABgMAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-09T14:19:28.682Z",
               "EditorCaption": ""

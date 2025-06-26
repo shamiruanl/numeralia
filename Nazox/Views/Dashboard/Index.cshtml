@@ -77,6 +77,60 @@
         color: #fa5c7c;
     }
 </style>
+<style media="print">
+     canvas {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    .col-md-6, .chart-break{
+        display: block !important;
+        width: 100% !important;
+    }
+    
+
+    .print-row {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .apexcharts-toolbar {
+        display: none !important;
+    }
+
+    .apex-charts {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    h3, h4 {
+        page-break-after: avoid;
+    }
+
+    #btnPrintTab {
+        display: none;
+    }
+
+    .print-page-break {
+        page-break-before: always;
+        break-before: page;
+    }
+    /* Asegurar que los íconos feather se muestren correctamente */
+    svg.feather {
+        width: 36px;
+        height: 36px;
+    }
+</style>
+
+</style>
+
 
 <!--SECCION DE TABS-->
 <div class="tabs-container">
@@ -87,7 +141,28 @@
         <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
         <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
     </div>
-
+    <!--Filtros-->
+    <div class="row mx-auto mt-1">
+        <div class="col-md-12">
+            <div class="card shadow-sm mb-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="fechaInicioReporte" class="form-label">Fecha de Inicio:</label>
+                            <input type="date" class="form-control" id="fechaInicioReporte">
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="fechaFinReporte" class="form-label">Fecha de Fin:</label>
+                            <input type="date" class="form-control" id="fechaFinReporte">
+                        </div>
+                        <div class="col-md-2 d-flex align-items-end mb-3">
+                            <button type="button" class="btn btn-primary w-100" id="btnConfirmarFechas">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- TAB1 - DESARROLLO URBANO -->
     <div id="tab1" class="tab-content" style="display: block;">
         <!-- Sección de Inversión -->
@@ -165,7 +240,7 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Desglose de Inversión</h4>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 chart-break">
                                 <div class="card border">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Inversión del predio</h5>
@@ -173,7 +248,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 chart-break">
                                 <div class="card border">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Urbanización de predios</h5>
@@ -181,7 +256,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 chart-break">
                                 <div class="card border">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Costo venta</h5>
@@ -356,12 +431,12 @@
             </div>
             <!-- División-->
             @*<div class="col-auto d-none d-md-flex">
-                    <div class="vr border-start" style="border: 1px solid rgba(0,0,0,0.1);"></div>
-                </div>
+                <div class="vr border-start" style="border: 1px solid rgba(0,0,0,0.1);"></div>
+            </div>
 
-                <div class="col-12 d-md-none">
-                    <hr class="my-4">
-                </div>*@
+            <div class="col-12 d-md-none">
+                <hr class="my-4">
+            </div>*@
             <!-- Gráfica de pastel para naves industriales -->
             <div class="col-lg-6 d-flex flex-column">
                 <div class="text-center pb-3 pt-3">
@@ -748,7 +823,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title mb-4">Distribución por Sector de Nuevos Empleos</h4>
-                        <div id="empleo-sector-bar-chart" class="apex-charts" style="min-height: 250px;"></div>
+                        <div id="empleo-sector-bar-chart" class="apex-charts" style="min-height: 250px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
@@ -756,7 +831,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title mb-4">Afiliados al Sistema de Salud</h4>
-                        <div id="salud-bar-chart" class="apex-charts" style="min-height: 250px;"></div>
+                        <div id="salud-bar-chart" class="apex-charts" style="min-height: 250px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
@@ -767,7 +842,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title mb-4">Vacantes y Bolsa de Empleo</h4>
-                        <div id="bolsa-empleo-bar-chart" class="apex-charts" style="min-height: 250px;"></div>
+                        <div id="bolsa-empleo-bar-chart" class="apex-charts" style="min-height: 250px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
@@ -775,7 +850,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title mb-4">Capacitaciones y Emprendimiento</h4>
-                        <div id="capacitacion-bar-chart" class="apex-charts" style="min-height: 250px;"></div>
+                        <div id="capacitacion-bar-chart" class="apex-charts" style="min-height: 250px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
@@ -875,7 +950,7 @@
         <h3 class="mt-4">Personal Policial</h3>
         <div class="row">
             <!-- Número total de policías -->
-            <div class="col-md-4">
+            <div class="col-md-4 chart-break">
                 <div class="card h-100">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
@@ -900,7 +975,7 @@
             </div>
 
             <!-- Policías por 100 habitantes -->
-            <div class="col-md-4">
+            <div class="col-md-4 chart-break">
                 <div class="card h-100">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
@@ -925,7 +1000,7 @@
             </div>
 
             <!-- Distribución por tipo de policía -->
-            <div class="col-md-4">
+            <div class="col-md-4 chart-break">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title mb-4">Distribución por tipo de policía</h5>
@@ -1425,7 +1500,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 chart-break">
                                 <div id="servicios-escuelas-chart" class="apex-charts" style="min-height: 300px;"></div>
                             </div>
                         </div>
@@ -2244,16 +2319,98 @@
             </div>
         </div>
     </div>
-        </div>
-    </div>
-
 
     <!-- TAB4 -->
     <div id="tab4" class="tab-content">
         <h3>Obras Públicas</h3>
-        <!-- Contenido del tab4 -->
+        <hr> <h4>Inversión General</h4>
+        <div class="row mx-auto my-3">
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-truncate font-size-14 mb-2">Monto Total Invertido</p>
+                        <i data-feather="dollar-sign" class="text-primary mb-3" style="width: 36px; height: 36px;"></i>
+                        <h3 class="mb-0 text-primary">$80,000,000 MXN</h3>
+                        <p class="text-muted small mt-2">Inversión anual proyectada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-truncate font-size-14 mb-2">Obras Completadas</p>
+                        <i data-feather="check-circle" class="text-success mb-3" style="width: 36px; height: 36px;"></i>
+                        <h3 class="mb-0 text-success">45</h3>
+                        <p class="text-muted small mt-2">En el último periodo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4 text-center">Distribución por Tipo de Obra</h4>
+                        <div id="obra-tipo-pastel-chart" class="apex-charts" style="min-height: 250px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Impacto y Detalle</h4>
+        <div class="row mx-auto my-3">
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                        <p class=" font-size-14 mb-2">Metros Cuadrados Construidos</p>
+                        <i data-feather="grid" class="text-info mb-3" style="width: 36px; height: 36px;"></i>
+                        <h3 class="mb-0 text-info">150,000 m²</h3>
+                        <p class="text-muted small mt-2">Área total de construcción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-truncate font-size-14 mb-2">Beneficiarios Directos</p>
+                        <i data-feather="users" class="text-warning mb-3" style="width: 36px; height: 36px;"></i>
+                        <h3 class="mb-0 text-warning">120,000+</h3>
+                        <p class="text-muted small mt-2">Impacto en la comunidad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4 text-center">Distribución por Sector</h4>
+                        <div id="obra-sector-pastel-chart" class="apex-charts" style="min-height: 250px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Obras Clave Realizadas</h4>
+        <div class="row mx-auto my-3">
+            <div class="col-12 mb-3 chart-break">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4 text-center">Detalle de Obras Más Representativas</h4>
+                        <div id="obra-detalle-bar-chart" class="apex-charts" style="min-height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mx-auto p-2">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary" id="btnPrintTab">
+                <i data-feather="printer" class="me-2"></i> Imprimir Pestaña Actual
+            </button>
+        </div>
     </div>
 </div>
+
+
+
 <!--FIN TABS-->
 <!-- JAVASCRIPT -->
 <script src="~/assets/libs/jquery/jquery.min.js"></script>
@@ -2281,6 +2438,10 @@
 
 <!-- App js -->
 <script src="~/assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace(); // Inicializa Feather Icons para que los SVGs se rendericen
+</script>
 
 <script type="text/javascript">
     function openTab(evt, tabId) {
@@ -2854,4 +3015,100 @@
     };
     var capacitacionChart = new ApexCharts(document.querySelector("#capacitacion-bar-chart"), capacitacionOptions);
     capacitacionChart.render();
+
+    //tab4
+    // Gráfica: Distribución por Tipo de Obra (Pastel)
+    var obraTipoOptions = {
+        series: [35, 30, 20, 15], // Datos de ejemplo para Pluvial, Vialidad, Edificios Públicos, Otros
+        chart: { height: 250, type: 'pie' },
+        labels: ['Pluvial', 'Vialidad', 'Edificios Públicos', 'Otros'],
+        colors: ['#0acf97', '#727cf5', '#ffbc00', '#fa5c7c'], // Colores distintos
+        legend: { position: 'bottom' },
+        dataLabels: { enabled: true, formatter: function (val) { return val.toFixed(1) + '%' } }
+    };
+    var obraTipoChart = new ApexCharts(document.querySelector("#obra-tipo-pastel-chart"), obraTipoOptions);
+    obraTipoChart.render();
+
+    // Gráfica: Distribución por Sector (Pastel)
+    var obraSectorOptions = {
+        series: [25, 20, 15, 10, 30], // Datos de ejemplo para Educación, Salud, Deporte, Seguridad, Otros
+        chart: { height: 250, type: 'pie' },
+        labels: ['Educación', 'Salud', 'Deporte', 'Seguridad', 'Cultura'],
+        colors: ['#39afd1', '#6c757d', '#313a46', '#e3eaef', '#727cf5'], // Colores distintos
+        legend: { position: 'bottom' },
+        dataLabels: { enabled: true, formatter: function (val) { return val.toFixed(1) + '%' } }
+    };
+    var obraSectorChart = new ApexCharts(document.querySelector("#obra-sector-pastel-chart"), obraSectorOptions);
+    obraSectorChart.render();
+
+    // Gráfica: Detalle de Obras (Barras)
+    var obraDetalleOptions = {
+        series: [{
+            name: 'Inversión (MXN)',
+            data: [15000000, 12000000, 9000000, 7000000, 5000000] // Montos de ejemplo
+        }],
+        chart: { type: 'bar', height: 300 },
+        xaxis: {
+            categories: ['Casa Rosa', 'Unidad de Rehabilitación', 'Parque Central', 'Rehabilitación Vial Av. Principal', 'Escuela Modelo'],
+            labels: {
+                rotate: -45, // Mantenemos la rotación si es necesaria
+                // Añadimos el formatter para truncar y añadir puntos suspensivos
+                formatter: function (val) {
+                    const maxLength = 20; // Define el número máximo de caracteres antes de truncar
+                    if (val && val.length > maxLength) {
+                        return val.substring(0, maxLength) + '...';
+                    }
+                    return val;
+                }
+            }
+        },
+        yaxis: {
+            title: { text: 'Inversión' },
+            labels: { formatter: function (val) { return '$' + (val / 1000000).toFixed(0) + ' M'; } } // Formatear a millones
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                columnWidth: '55%'
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#0acf97'] // Color para las barras
+    };
+    var obraDetalleChart = new ApexCharts(document.querySelector("#obra-detalle-bar-chart"), obraDetalleOptions);
+    obraDetalleChart.render();
+
+</script>
+<script>
+    document.getElementById('btnPrintTab').addEventListener('click', function () {
+        // Encuentra la pestaña activa
+        const activeTabBtn = document.querySelector('.tab-button.active');
+        if (!activeTabBtn) return;
+
+        const tabId = activeTabBtn.getAttribute('onclick').match(/'([^']+)'/)[1];
+        const tabContent = document.getElementById(tabId);
+
+        if (!tabContent) return;
+
+        const printWindow = window.open('', '', 'height=800,width=1000');
+        printWindow.document.write('<html><head><title>Imprimir</title>');
+
+        // Copia los estilos actuales
+        document.querySelectorAll('link[rel="stylesheet"], style').forEach((el) => {
+            printWindow.document.write(el.outerHTML);
+        });
+
+        printWindow.document.write('</head><body>');
+        printWindow.document.write(tabContent.outerHTML);
+        printWindow.document.write('</body></html>');
+
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => {
+            printWindow.print();
+            printWindow.close();
+        }, 500);
+    });
 </script>
