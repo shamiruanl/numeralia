@@ -140,6 +140,7 @@
         <button class="tab-button" onclick="openTab(event, 'tab2')">Desarrollo Económico</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
         <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
+        <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
     </div>
     <!--Filtros-->
     <div class="row mx-auto mt-1">
@@ -2319,6 +2320,7 @@
             </div>
         </div>
     </div>
+<<<<<<< Updated upstream
 
     <!-- TAB4 -->
     <div id="tab4" class="tab-content">
@@ -2394,19 +2396,259 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4 text-center">Detalle de Obras Más Representativas</h4>
                         <div id="obra-detalle-bar-chart" class="apex-charts" style="min-height: 300px;"></div>
+=======
+</div>
+    </div>
+
+
+<!-- TAB4 -->
+<div id="tab4" class="tab-content">
+    <h3>Obras Públicas</h3>
+    <!-- Contenido del tab4 -->
+</div>
+
+<div class="row">
+    <!-- Sección de Ingresos Generales -->
+    <div class="col-12">
+        <h3 class="mt-4">Ingresos Municipales</h3>
+    </div>
+
+    <!-- Monto total de Ingresos -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Total de Ingresos Anuales</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">$385,750,000</h2>
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 8.5%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>vs año anterior</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-money-dollar-circle-line font-size-24 text-primary"></i>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+<<<<<<< Updated upstream
     <div class="row mx-auto p-2">
         <div class="col-md-12 text-center">
             <button type="button" class="btn btn-primary" id="btnPrintTab">
                 <i data-feather="printer" class="me-2"></i> Imprimir Pestaña Actual
             </button>
+=======
+    <!-- Distribución por tipo de ingresos -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Distribución de Ingresos</h5>
+                <div id="distribucion-ingresos-chart" class="apex-charts" style="min-height: 160px;"></div>
+                <div class="row text-center mt-2">
+                    <div class="col-4 border-end">
+                        <p class="text-muted mb-1">Propios</p>
+                        <h6 class="mb-0">45%</h6>
+                    </div>
+                    <div class="col-4 border-end">
+                        <p class="text-muted mb-1">Federales</p>
+                        <h6 class="mb-0">35%</h6>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-muted mb-1">Estatales</p>
+                        <h6 class="mb-0">20%</h6>
+                    </div>
+                </div>
+            </div>
+>>>>>>> Stashed changes
         </div>
     </div>
+
+    <!-- Provisiones económicas -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Provisiones Económicas</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">$42,500,000</h2>
+                            <span class="badge badge-soft-danger font-size-12">
+                                <i class="mdi mdi-menu-down"></i> 3.2%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>Reservas anuales</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-bank-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Ingresos Propios: Impuesto Predial -->
+    <div class="col-12 mt-4">
+        <h4>Ingresos Propios - Impuesto Predial</h4>
+    </div>
+
+    <!-- Recaudación de Impuesto Predial -->
+    <div class="col-xl-6 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Recaudación Predial</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">$98,250,000</h2>
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 12.7%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>Recaudación anual</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-home-4-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expedientes catastrales -->
+    <div class="col-xl-6 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Expedientes Catastrales</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">24,850</h2>
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 5.3%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>Actualizados semestralmente</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-folder-chart-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Ingresos Propios: ISAI -->
+    <div class="col-12 mt-4">
+        <h4>Ingresos Propios - ISAI</h4>
+    </div>
+
+    <!-- Recaudación de ISAI -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Recaudación ISAI</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">$75,500,000</h2>
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 8.2%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>Recaudación semestral</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-building-4-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Monto total de egresos -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h5 class="card-title mb-1">Total de Egresos</h5>
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 me-2">$320,250,000</h2>
+                            <span class="badge badge-soft-danger font-size-12">
+                                <i class="mdi mdi-menu-down"></i> 4.8%
+                            </span>
+                        </div>
+                        <p class="text-muted mb-0 mt-1"><small>Gasto semestral</small></p>
+                    </div>
+                    <div class="flex-shrink-0 align-self-center">
+                        <i class="ri-money-dollar-box-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Distribución por tipo de gasto -->
+    <div class="col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Distribución de Egresos</h5>
+                <div id="distribucion-gastos-chart" class="apex-charts" style="min-height: 160px;"></div>
+                <div class="row text-center mt-2">
+                    <div class="col-6 border-end">
+                        <p class="text-muted mb-1">Corriente</p>
+                        <h6 class="mb-0">65%</h6>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-muted mb-1">Inversión</p>
+                        <h6 class="mb-0">35%</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Distribución por tipo de inversión pública -->
+    <div class="col-xl-6 col-md-6 mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Inversión Pública por Área</h5>
+                <div id="inversion-publica-chart" class="apex-charts" style="min-height: 250px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deuda y pasivos -->
+    <div class="col-xl-6 col-md-6 mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Deuda y Pasivos Municipales</h5>
+                <div id="deuda-pasivos-chart" class="apex-charts" style="min-height: 250px;"></div>
+                <div class="row text-center mt-2">
+                    <div class="col-4 border-end">
+                        <p class="text-muted mb-1">Deuda total</p>
+                        <h6 class="mb-0">$85M</h6>
+                    </div>
+                    <div class="col-4 border-end">
+                        <p class="text-muted mb-1">Pasivos</p>
+                        <h6 class="mb-0">$42M</h6>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-muted mb-1">Capacidad</p>
+                        <h6 class="mb-0">72%</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 
 
@@ -3016,6 +3258,7 @@
     var capacitacionChart = new ApexCharts(document.querySelector("#capacitacion-bar-chart"), capacitacionOptions);
     capacitacionChart.render();
 
+<<<<<<< Updated upstream
     //tab4
     // Gráfica: Distribución por Tipo de Obra (Pastel)
     var obraTipoOptions = {
@@ -3111,4 +3354,172 @@
             printWindow.close();
         }, 500);
     });
+=======
+       // Gráfico de distribución de ingresos
+            var distribucionIngresosOptions = {
+                series: [45, 35, 20],
+            chart: {
+                type: 'donut',
+            height: 160
+        },
+            labels: ['Ingresos Propios', 'Aportaciones Federales', 'Aportaciones Estatales'],
+            colors: ['#727cf5', '#0acf97', '#6c757d'],
+            legend: {
+                show: false
+        },
+            plotOptions: {
+                pie: {
+                donut: {
+                size: '70%',
+            labels: {
+                show: true,
+            total: {
+                show: true,
+            label: 'Total',
+            formatter: function (w) {
+                                return '100%'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+            var distribucionIngresosChart = new ApexCharts(document.querySelector("#distribucion-ingresos-chart"), distribucionIngresosOptions);
+            distribucionIngresosChart.render();
+
+            // Gráfico de distribución de gastos
+            var distribucionGastosOptions = {
+                series: [{
+                data: [65, 35]
+        }],
+            chart: {
+                type: 'bar',
+            height: 160,
+            toolbar: {
+                show: false
+            }
+        },
+            plotOptions: {
+                bar: {
+                horizontal: true,
+            barHeight: '70%',
+            borderRadius: 4,
+            distributed: true
+            }
+        },
+            colors: ['#727cf5', '#0acf97'],
+            dataLabels: {
+                enabled: false
+        },
+            xaxis: {
+                categories: ['Gasto Corriente', 'Gasto de Inversión'],
+            axisBorder: {
+                show: false
+            },
+            axisTicks: {
+                show: false
+            }
+        },
+            yaxis: {
+                show: false
+        },
+            grid: {
+                show: false
+        }
+    };
+            var distribucionGastosChart = new ApexCharts(document.querySelector("#distribucion-gastos-chart"), distribucionGastosOptions);
+            distribucionGastosChart.render();
+
+            // Gráfico de inversión pública
+            var inversionPublicaOptions = {
+                series: [{
+                name: 'Inversión',
+            data: [28, 22, 25, 15, 10]
+        }],
+            chart: {
+                type: 'bar',
+            height: 250,
+            toolbar: {
+                show: false
+            }
+        },
+            plotOptions: {
+                bar: {
+                borderRadius: 4,
+            horizontal: false,
+            }
+        },
+            dataLabels: {
+                enabled: false
+        },
+            colors: ['#727cf5'],
+            xaxis: {
+                categories: ['Seguridad', 'Educación', 'Obra Pública', 'Salud', 'Otros'],
+        },
+            yaxis: {
+                title: {
+                text: 'Millones de pesos'
+            }
+        },
+            tooltip: {
+                y: {
+                formatter: function (val) {
+                    return "$" + val + "M"
+                }
+            }
+        }
+    };
+            var inversionPublicaChart = new ApexCharts(document.querySelector("#inversion-publica-chart"), inversionPublicaOptions);
+            inversionPublicaChart.render();
+
+            // Gráfico de deuda y pasivos
+            var deudaPasivosOptions = {
+                series: [{
+                name: 'Deuda',
+            data: [85, 42]
+        }],
+            chart: {
+                type: 'bar',
+            height: 250,
+            toolbar: {
+                show: false
+            }
+        },
+            plotOptions: {
+                bar: {
+                borderRadius: 4,
+            horizontal: true,
+            }
+        },
+            dataLabels: {
+                enabled: false
+        },
+            colors: ['#fa5c7c'],
+            xaxis: {
+                categories: ['Deuda Total', 'Pasivos'],
+            title: {
+                text: 'Millones de pesos'
+            }
+        },
+            annotations: {
+                xaxis: [{
+                x: 72,
+            strokeDashArray: 0,
+            borderColor: '#0acf97',
+            label: {
+                borderColor: '#0acf97',
+            style: {
+                color: '#fff',
+            background: '#0acf97',
+                    },
+            text: 'Capacidad de pago 72%',
+                }
+            }]
+        }
+    };
+            var deudaPasivosChart = new ApexCharts(document.querySelector("#deuda-pasivos-chart"), deudaPasivosOptions);
+            deudaPasivosChart.render();
+   
+>>>>>>> Stashed changes
 </script>
