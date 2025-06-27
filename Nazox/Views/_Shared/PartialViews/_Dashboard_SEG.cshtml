@@ -1,0 +1,1415 @@
+﻿
+    <!-- TAB3 - SEGURIDAD CIUDADANA -->
+    <div id="tab3" class="tab-content">
+        <!-- Sección de Inversión en Seguridad -->
+        <h3>Inversión en Seguridad</h3>
+        <div class="row">
+            <!-- Monto total de inversión -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Monto total de inversión</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">$48,750,000</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 8.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs semestre anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-money-dollar-circle-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distribución por tipo de inversión -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Distribución por tipo de inversión</h5>
+                        <div id="inversion-seguridad-chart" class="apex-charts" style="min-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Personal Policial -->
+        <h3 class="mt-4">Personal Policial</h3>
+        <div class="row">
+            <!-- Número total de policías -->
+            <div class="col-md-4 chart-break">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Número total de policías</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 5.7%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs semestre anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-user-3-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Policías por 100 habitantes -->
+            <div class="col-md-4 chart-break">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Policías por 100 habitantes</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1.2</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 0.1
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs semestre anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-group-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distribución por tipo de policía -->
+            <div class="col-md-4 chart-break">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Distribución por tipo de policía</h5>
+                        <div id="tipo-policia-chart" class="apex-charts" style="min-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Salarios -->
+        <h3 class="mt-4">Salarios</h3>
+        <div class="row">
+            <!-- Salario promedio -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Salario promedio anual</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">$185,000</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 7.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-wallet-3-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distribución salarial por tipo de policía -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Salarios por tipo de policía</h5>
+                        <div id="salarios-tipo-chart" class="apex-charts" style="min-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Índice Delictivo -->
+        <h3 class="mt-4">Índice Delictivo</h3>
+        <div class="row">
+            <!-- Faltas administrativas -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Faltas administrativas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">3,850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 8.7%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-list-check font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">78% resueltas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delitos contra la salud -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Delitos contra la salud</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,025</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 15.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-forbid-2-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">65% con sentencia</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delitos patrimoniales -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Delitos patrimoniales</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">2,150</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 5.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-bank-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">42% recuperación de bienes</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otros delitos -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Otros delitos</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,480</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 3.1%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-error-warning-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">58% resueltos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Armas aseguradas -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Armas aseguradas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">428</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 22.5%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-gun-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">85% ilegales</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehículos asegurados (robados) -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Vehículos asegurados</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">315</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 8.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-car-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 63%" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">63% devueltos a dueños</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráfico de tendencia de detenciones -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Tendencia de Detenciones (Últimos 12 meses)</h4>
+                        <div id="tendencia-detenciones-chart" class="apex-charts" style="min-height: 300px;"></div>
+                        <div class="row text-center mt-2">
+                            <div class="col-4 border-end">
+                                <p class="text-muted mb-2">Faltas administrativas</p>
+                                <h5 class="mb-0">3,850</h5>
+                            </div>
+                            <div class="col-4 border-end">
+                                <p class="text-muted mb-2">Delitos contra la salud</p>
+                                <h5 class="mb-0">1,025</h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted mb-2">Delitos patrimoniales</p>
+                                <h5 class="mb-0">2,150</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Vialidad (versión modificada) -->
+        <h3 class="mt-4">Estadísticas de Vialidad</h3>
+        <div class="row">
+            <!-- Número de accidentes totales -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Accidentes totales</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,850</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 7.8%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-car-crash-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">65% en zonas urbanas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accidentes sin lesionados -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Accidentes sin lesionados</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,250</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 2.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-caravan-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">82% daños materiales</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infracciones -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Infracciones</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">28,450</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 18.5%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-traffic-light-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">55% por exceso de velocidad</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liberación de vehículos -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Liberación de vehículos</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">3,250</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 12.1%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-caravan-fill font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">78% en menos de 24h</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medidas de protección entregadas -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Medidas de protección</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,480</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 22.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">órdenes entregadas</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-shield-check-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">92% por violencia familiar</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personas localizadas (Protocolo 48) -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Personas localizadas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">428</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 15.7%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">(Protocolo 48)</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-user-search-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">88% menores de edad</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráfico ampliado de servicios en escuelas -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="card-title mb-0">Servicios brindados en escuelas</h4>
+                            <div class="dropdown">
+                                <a class="btn btn-sm btn-link text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical font-size-16"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">2024</a></li>
+                                    <li><a class="dropdown-item" href="#">2023</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <h2 class="mb-0 me-3">5,280</h2>
+                                        <p class="text-muted mt-2 mb-0">alumnos atendidos</p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <div class="p-2">
+                                            <i class="ri-school-line font-size-40 text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center mt-4">
+                                    <div class="col-4 border-end">
+                                        <p class="text-muted mb-2">Talleres</p>
+                                        <h5 class="mb-0">2,150</h5>
+                                    </div>
+                                    <div class="col-4 border-end">
+                                        <p class="text-muted mb-2">Pláticas</p>
+                                        <h5 class="mb-0">1,980</h5>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-muted mb-2">Simulacros</p>
+                                        <h5 class="mb-0">1,150</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 chart-break">
+                                <div id="servicios-escuelas-chart" class="apex-charts" style="min-height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Índice de Inseguridad - Cards Individuales -->
+        <h3 class="mt-4">Índice de Inseguridad</h3>
+        <div class="row">
+            <!-- Card 1: Índice de corrupción -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-danger text-danger font-size-16">
+                                <i class="ri-money-dollar-circle-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Índice de corrupción</h5>
+                        <h2 class="mb-0">34%</h2>
+                        <p class="text-muted mt-3 mb-2">Percepción ciudadana</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-danger font-size-12">
+                                <i class="mdi mdi-menu-down"></i> 2.5%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Desempeño de la policía -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-warning text-warning font-size-16">
+                                <i class="ri-star-smile-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Desempeño policial</h5>
+                        <h2 class="mb-0">6.2/10</h2>
+                        <p class="text-muted mt-3 mb-2">Calificación ciudadana</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 0.3
+                            </span>
+                            <span class="ms-2 text-muted">vs trimestre anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Consumo de alcohol en vía pública -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-info text-info font-size-16">
+                                <i class="ri-beer-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Alcohol en vía pública</h5>
+                        <h2 class="mb-0">1,450</h2>
+                        <p class="text-muted mt-3 mb-2">Reportes anuales</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 12.8%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Robos/asaltos en vía pública -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-danger text-danger font-size-16">
+                                <i class="ri-user-unfollow-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Robos en vía pública</h5>
+                        <h2 class="mb-0">2,850</h2>
+                        <p class="text-muted mt-3 mb-2">Casos anuales</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-danger font-size-12">
+                                <i class="mdi mdi-menu-down"></i> 8.3%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Venta/consumo de drogas en vía pública -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-warning text-warning font-size-16">
+                                <i class="ri-forbid-2-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Drogas en vía pública</h5>
+                        <h2 class="mb-0">980</h2>
+                        <p class="text-muted mt-3 mb-2">Intervenciones anuales</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 15.2%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Inseguridad en cajero automático -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary font-size-16">
+                                <i class="ri-bank-card-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Inseguridad en cajeros</h5>
+                        <h2 class="mb-0">42%</h2>
+                        <p class="text-muted mt-3 mb-2">Percepción ciudadana</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-danger font-size-12">
+                                <i class="mdi mdi-menu-down"></i> 5.7%
+                            </span>
+                            <span class="ms-2 text-muted">vs semestre anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Inseguridad en transporte público -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-info text-info font-size-16">
+                                <i class="ri-bus-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Inseguridad en transporte</h5>
+                        <h2 class="mb-0">58%</h2>
+                        <p class="text-muted mt-3 mb-2">Percepción ciudadana</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 3.2%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Inseguridad en bancos -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="avatar-sm mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-success text-success font-size-16">
+                                <i class="ri-bank-line"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-size-15 mb-1">Inseguridad en bancos</h5>
+                        <h2 class="mb-0">35%</h2>
+                        <p class="text-muted mt-3 mb-2">Percepción ciudadana</p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge badge-soft-success font-size-12">
+                                <i class="mdi mdi-menu-up"></i> 7.5%
+                            </span>
+                            <span class="ms-2 text-muted">vs año anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Encuestas y Ranking -->
+        <h3 class="mt-4">Percepción Ciudadana</h3>
+        <div class="row">
+            <!-- Percepción de seguridad -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Percepción de seguridad</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">42%</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 5.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-shield-check-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Percepción de inseguridad -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Percepción de inseguridad</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">58%</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 5.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-shield-cross-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Confianza en la policía -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Confianza en la policía</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">65%</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 8.7%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-police-car-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ranking de seguridad -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Ranking zona metropolitana</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">#3</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 2
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">posición vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-medal-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Ranking nacional</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">#12</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 3
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">posición vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-trophy-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Exámenes de Confianza -->
+        <h3 class="mt-4">Exámenes de Confianza</h3>
+        <div class="row">
+            <!-- Número total de exámenes -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Total de exámenes aplicados</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">2,850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 18.2%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs año anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-file-search-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distribución por aplicación -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Distribución por tipo de personal</h5>
+                        <div id="distribucion-examenes-chart" class="apex-charts" style="min-height: 200px;"></div>
+                        <div class="row text-center mt-3">
+                            <div class="col-6 border-end">
+                                <p class="text-muted mb-2">Policías</p>
+                                <h5 class="mb-0">2,150</h5>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-muted mb-2">Administrativos</p>
+                                <h5 class="mb-0">700</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Formación y Capacitación Continua -->
+        <h3 class="mt-4">Formación y Capacitación Continua</h3>
+        <div class="row">
+            <!-- Graduados -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Personal graduado</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,250</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 22.5%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">en el último año</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-graduation-cap-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">85% aprobación en evaluaciones</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cadetes -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Cadetes en formación</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">480</h2>
+                                    <span class="badge badge-soft-danger font-size-12">
+                                        <i class="mdi mdi-menu-down"></i> 5.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">vs ciclo anterior</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-user-5-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">65% mujeres / 35% hombres</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Academia de Capacitación Virtual -->
+        <h3 class="mt-4">Academia de Capacitación Virtual</h3>
+        <div class="row">
+            <!-- Simulador de tiro -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Simulador de tiro</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 32.1%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">sesiones completadas</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-gun-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">78% aprobación en evaluaciones</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manejo de patrullas -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Manejo de patrullas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">1,420</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 18.7%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">sesiones completadas</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-car-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">82% aprobación en evaluaciones</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manejo de motos -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-3">Manejo de motos</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-3">980</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 25.3%
+                                    </span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0">sesiones completadas</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="p-2">
+                                    <i class="ri-motorbike-line font-size-40 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">75% aprobación en evaluaciones</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Recursos de Vehículos -->
+        <h3 class="mt-4">Recursos de Vehículos</h3>
+        <div class="row">
+            <!-- Vehículos -->
+            <div class="col-xl-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Vehículos operativos</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">285</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 15
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Unidades activas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-car-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motocicletas -->
+            <div class="col-xl-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Motocicletas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">120</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 8
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Unidades activas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-motorbike-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Torres de vigilancia -->
+            <div class="col-xl-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Torres de vigilancia</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">42</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 5
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Instaladas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-survey-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Recursos de Armas -->
+        <h3 class="mt-4">Recursos de Armas</h3>
+        <div class="row">
+            <!-- Armas cortas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Armas cortas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">1,250</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 85
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Registradas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-gun-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Armas largas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Armas largas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">600</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 35
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Registradas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-gun-fill font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Recursos Tecnológicos -->
+        <h3 class="mt-4">Recursos Tecnológicos</h3>
+        <div class="row">
+            <!-- Botones de pánico -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Botones de pánico</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">1,850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 320
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Instalados</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-alarm-warning-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cámaras de vigilancia urbana -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Cámaras urbanas</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">1,250</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 350
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Instaladas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-camera-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cámaras de solapa -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Cámaras de solapa</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">850</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 120
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Asignadas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-camera-2-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drones -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Drones Metrice 300</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">28</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 8
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Unidades operativas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-drone-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulador virtual de tiro -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Simulador de tiro</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">12</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 3
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Estaciones activas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-aiming-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulador de manejo vehicular -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Simulador vehicular</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">8</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 2
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Estaciones activas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-steering-2-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulador de manejo de motocicletas -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Simulador de motos</h5>
+                                <div class="d-flex align-items-center">
+                                    <h2 class="mb-0 me-2">6</h2>
+                                    <span class="badge badge-soft-success font-size-12">
+                                        <i class="mdi mdi-menu-up"></i> 1
+                                    </span>
+                                </div>
+                                <p class="text-muted mb-0 mt-1"><small>Estaciones activas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-motorbike-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
