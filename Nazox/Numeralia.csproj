@@ -1390,6 +1390,7 @@
     <None Include="Views\_Shared\PartialViews\_Dashboard_DU.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_OP.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_SEG.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_FIN.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

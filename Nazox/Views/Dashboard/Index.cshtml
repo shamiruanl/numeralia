@@ -139,6 +139,7 @@
         <button class="tab-button" onclick="openTab(event, 'tab2')">Desarrollo Económico</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
         <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
+        <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
     </div>
     <!--Filtros-->
     <div class="row mx-auto mt-1">
@@ -171,6 +172,8 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_SEG")
     <!--TAB 4 OBRAS PÚBLICAS-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_OP")
+    <!--TAB 5 FINANZAS Y TESORERÍA-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_FIN")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -853,6 +856,172 @@
     var obraDetalleChart = new ApexCharts(document.querySelector("#obra-detalle-bar-chart"), obraDetalleOptions);
     obraDetalleChart.render();
 
+    // TAB 5
+    // Gráfico de distribución de ingresos
+    var distribucionIngresosOptions = {
+        series: [45, 35, 20],
+        chart: {
+            type: 'donut',
+            height: 160
+        },
+        labels: ['Ingresos Propios', 'Aportaciones Federales', 'Aportaciones Estatales'],
+        colors: ['#727cf5', '#0acf97', '#6c757d'],
+        legend: {
+            show: false
+        },
+        plotOptions: {
+            pie: {
+                donut: {
+                    size: '70%',
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                return '100%'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var distribucionIngresosChart = new ApexCharts(document.querySelector("#distribucion-ingresos-chart"), distribucionIngresosOptions);
+    distribucionIngresosChart.render();
+
+    // Gráfico de distribución de gastos
+    var distribucionGastosOptions = {
+        series: [{
+            data: [65, 35]
+        }],
+        chart: {
+            type: 'bar',
+            height: 160,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                horizontal: true,
+                barHeight: '70%',
+                borderRadius: 4,
+                distributed: true
+            }
+        },
+        colors: ['#727cf5', '#0acf97'],
+        dataLabels: {
+            enabled: false
+        },
+        xaxis: {
+            categories: ['Gasto Corriente', 'Gasto de Inversión'],
+            axisBorder: {
+                show: false
+            },
+            axisTicks: {
+                show: false
+            }
+        },
+        yaxis: {
+            show: false
+        },
+        grid: {
+            show: false
+        }
+    };
+    var distribucionGastosChart = new ApexCharts(document.querySelector("#distribucion-gastos-chart"), distribucionGastosOptions);
+    distribucionGastosChart.render();
+
+    // Gráfico de inversión pública
+    var inversionPublicaOptions = {
+        series: [{
+            name: 'Inversión',
+            data: [28, 22, 25, 15, 10]
+        }],
+        chart: {
+            type: 'bar',
+            height: 250,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: false,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#727cf5'],
+        xaxis: {
+            categories: ['Seguridad', 'Educación', 'Obra Pública', 'Salud', 'Otros'],
+        },
+        yaxis: {
+            title: {
+                text: 'Millones de pesos'
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return "$" + val + "M"
+                }
+            }
+        }
+    };
+    var inversionPublicaChart = new ApexCharts(document.querySelector("#inversion-publica-chart"), inversionPublicaOptions);
+    inversionPublicaChart.render();
+
+    // Gráfico de deuda y pasivos
+    var deudaPasivosOptions = {
+        series: [{
+            name: 'Deuda',
+            data: [85, 42]
+        }],
+        chart: {
+            type: 'bar',
+            height: 250,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#fa5c7c'],
+        xaxis: {
+            categories: ['Deuda Total', 'Pasivos'],
+            title: {
+                text: 'Millones de pesos'
+            }
+        },
+        annotations: {
+            xaxis: [{
+                x: 72,
+                strokeDashArray: 0,
+                borderColor: '#0acf97',
+                label: {
+                    borderColor: '#0acf97',
+                    style: {
+                        color: '#fff',
+                        background: '#0acf97',
+                    },
+                    text: 'Capacidad de pago 72%',
+                }
+            }]
+        }
+    };
+    var deudaPasivosChart = new ApexCharts(document.querySelector("#deuda-pasivos-chart"), deudaPasivosOptions);
+    deudaPasivosChart.render();
 </script>
 <script>
     document.getElementById('btnPrintTab').addEventListener('click', function () {
