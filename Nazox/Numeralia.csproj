@@ -214,6 +214,9 @@
     <Content Include="assets\images\users\avatar-7.jpg" />
     <Content Include="assets\images\users\avatar-8.jpg" />
     <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\dashboard\_dashboard_de.js" />
+    <Content Include="assets\js\dashboard\_dashboard_edu.js" />
+    <Content Include="assets\js\dashboard\_dashboard_op.js" />
     <Content Include="assets\js\pages\apexcharts.init.js" />
     <Content Include="assets\js\pages\calendar.init.js" />
     <Content Include="assets\js\pages\chartjs.init.js" />
@@ -1391,6 +1394,7 @@
     <Content Include="Views\_Shared\PartialViews\_Dashboard_OP.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_SEG.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_FIN.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_EDU.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

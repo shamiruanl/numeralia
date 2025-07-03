@@ -78,17 +78,17 @@
     }
 </style>
 <style media="print">
-     canvas {
+    canvas {
         max-width: 100% !important;
         height: auto !important;
         page-break-inside: avoid;
     }
 
-    .col-md-6, .chart-break{
+    .col-md-6, .chart-break {
         display: block !important;
         width: 100% !important;
     }
-    
+
 
     .print-row {
         page-break-inside: avoid;
@@ -140,6 +140,7 @@
         <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
         <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
         <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
+        <button class="tab-button" onclick="openTab(event, 'tab6')">Educación</button>
     </div>
     <!--Filtros-->
     <div class="row mx-auto mt-1">
@@ -174,6 +175,8 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_OP")
     <!--TAB 5 FINANZAS Y TESORERÍA-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_FIN")
+    <!--TAB 6 EDUCACIÓN-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_EDU")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -194,7 +197,6 @@
 <script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="~/assets/libs/simplebar/simplebar.min.js"></script>
 <script src="~/assets/libs/node-waves/waves.min.js"></script>
-
 <!-- apexcharts -->
 <script src="~/assets/libs/apexcharts/apexcharts.min.js"></script>
 
@@ -706,323 +708,14 @@
     };
     var distribucionExamenesChart = new ApexCharts(document.querySelector("#distribucion-examenes-chart"), distribucionExamenesOptions);
     distribucionExamenesChart.render();
-
-    //tab 2
-    // Sectores pastel
-    var sectoresOptions = {
-        series: [20, 15, 25, 10, 20, 10],
-        chart: { height: 250, type: 'pie' },
-        labels: ['Alimentos', 'Empacadora', 'Manufactura', 'Comercio', 'Transporte', 'Automotriz'],
-        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1', '#313a46'],
-        legend: { position: 'bottom' }
-    };
-    var sectoresChart = new ApexCharts(document.querySelector("#sectores-pastel-chart"), sectoresOptions);
-    sectoresChart.render();
-
-    // Tamaño empresa pastel
-    var tamanoEmpresaOptions = {
-        series: [60, 25, 10, 5],
-        chart: { height: 250, type: 'pie' },
-        labels: ['Micro', 'Pequeñas', 'Medianas', 'Grandes'],
-        colors: ['#6c757d', '#ffbc00', '#727cf5', '#0acf97'],
-        legend: { position: 'bottom' }
-    };
-    var tamanoEmpresaChart = new ApexCharts(document.querySelector("#tamano-empresa-pastel-chart"), tamanoEmpresaOptions);
-    tamanoEmpresaChart.render();
-
-    // Empleo formal/informal
-    var empleoFormalOptions = {
-        series: [70, 30],
-        chart: { height: 250, type: 'pie' },
-        labels: ['Formal', 'Informal'],
-        colors: ['#39afd1', '#fa5c7c'],
-        legend: { position: 'bottom' }
-    };
-    var empleoFormalChart = new ApexCharts(document.querySelector("#empleo-formal-pastel-chart"), empleoFormalOptions);
-    empleoFormalChart.render();
-
-    // Empleo por género
-    var empleoGeneroOptions = {
-        series: [55, 45],
-        chart: { height: 250, type: 'pie' },
-        labels: ['Hombres', 'Mujeres'],
-        colors: ['#313a46', '#e3eaef'],
-        legend: { position: 'bottom' }
-    };
-    var empleoGeneroChart = new ApexCharts(document.querySelector("#empleo-genero-pastel-chart"), empleoGeneroOptions);
-    empleoGeneroChart.render();
-
-    // Empleo por sector (barras)
-    var empleoSectorOptions = {
-        series: [{ name: 'Nuevos empleos', data: [120, 80, 60, 40, 30, 20] }],
-        chart: { type: 'bar', height: 250 },
-        xaxis: { categories: ['Alimentos', 'Empacadora', 'Manufactura', 'Comercio', 'Transporte', 'Automotriz'] },
-        colors: ['#727cf5']
-    };
-    var empleoSectorChart = new ApexCharts(document.querySelector("#empleo-sector-bar-chart"), empleoSectorOptions);
-    empleoSectorChart.render();
-
-    // Salud (barras)
-    var saludOptions = {
-        series: [{ name: 'Afiliados', data: [5000, 3000, 2000] }],
-        chart: { type: 'bar', height: 250 },
-        xaxis: { categories: ['IMSS', 'ISSSTE', 'Privado'] },
-        colors: ['#0acf97']
-    };
-    var saludChart = new ApexCharts(document.querySelector("#salud-bar-chart"), saludOptions);
-    saludChart.render();
-
-    // Bolsa de empleo (barras)
-    var bolsaEmpleoOptions = {
-        series: [{ name: 'Vacantes', data: [200, 150, 100] }],
-        chart: { type: 'bar', height: 250 },
-        xaxis: { categories: ['Eventos', 'Digital', 'Empresas'] },
-        colors: ['#fa5c7c']
-    };
-    var bolsaEmpleoChart = new ApexCharts(document.querySelector("#bolsa-empleo-bar-chart"), bolsaEmpleoOptions);
-    bolsaEmpleoChart.render();
-
-    // Capacitaciones y emprendimiento (barras)
-    var capacitacionOptions = {
-        series: [{ name: 'Personas', data: [80, 60, 40] }],
-        chart: { type: 'bar', height: 250 },
-        xaxis: { categories: ['Capacitados', 'Emprendedores', 'Incubadoras'] },
-        colors: ['#ffbc00']
-    };
-    var capacitacionChart = new ApexCharts(document.querySelector("#capacitacion-bar-chart"), capacitacionOptions);
-    capacitacionChart.render();
-
-    //tab4
-    // Gráfica: Distribución por Tipo de Obra (Pastel)
-    var obraTipoOptions = {
-        series: [35, 30, 20, 15], // Datos de ejemplo para Pluvial, Vialidad, Edificios Públicos, Otros
-        chart: { height: 250, type: 'pie' },
-        labels: ['Pluvial', 'Vialidad', 'Edificios Públicos', 'Otros'],
-        colors: ['#0acf97', '#727cf5', '#ffbc00', '#fa5c7c'], // Colores distintos
-        legend: { position: 'bottom' },
-        dataLabels: { enabled: true, formatter: function (val) { return val.toFixed(1) + '%' } }
-    };
-    var obraTipoChart = new ApexCharts(document.querySelector("#obra-tipo-pastel-chart"), obraTipoOptions);
-    obraTipoChart.render();
-
-    // Gráfica: Distribución por Sector (Pastel)
-    var obraSectorOptions = {
-        series: [25, 20, 15, 10, 30], // Datos de ejemplo para Educación, Salud, Deporte, Seguridad, Otros
-        chart: { height: 250, type: 'pie' },
-        labels: ['Educación', 'Salud', 'Deporte', 'Seguridad', 'Cultura'],
-        colors: ['#39afd1', '#6c757d', '#313a46', '#e3eaef', '#727cf5'], // Colores distintos
-        legend: { position: 'bottom' },
-        dataLabels: { enabled: true, formatter: function (val) { return val.toFixed(1) + '%' } }
-    };
-    var obraSectorChart = new ApexCharts(document.querySelector("#obra-sector-pastel-chart"), obraSectorOptions);
-    obraSectorChart.render();
-
-    // Gráfica: Detalle de Obras (Barras)
-    var obraDetalleOptions = {
-        series: [{
-            name: 'Inversión (MXN)',
-            data: [15000000, 12000000, 9000000, 7000000, 5000000] // Montos de ejemplo
-        }],
-        chart: { type: 'bar', height: 300 },
-        xaxis: {
-            categories: ['Casa Rosa', 'Unidad de Rehabilitación', 'Parque Central', 'Rehabilitación Vial Av. Principal', 'Escuela Modelo'],
-            labels: {
-                rotate: -45, // Mantenemos la rotación si es necesaria
-                // Añadimos el formatter para truncar y añadir puntos suspensivos
-                formatter: function (val) {
-                    const maxLength = 20; // Define el número máximo de caracteres antes de truncar
-                    if (val && val.length > maxLength) {
-                        return val.substring(0, maxLength) + '...';
-                    }
-                    return val;
-                }
-            }
-        },
-        yaxis: {
-            title: { text: 'Inversión' },
-            labels: { formatter: function (val) { return '$' + (val / 1000000).toFixed(0) + ' M'; } } // Formatear a millones
-        },
-        plotOptions: {
-            bar: {
-                horizontal: false,
-                columnWidth: '55%'
-            },
-        },
-        dataLabels: {
-            enabled: false
-        },
-        colors: ['#0acf97'] // Color para las barras
-    };
-    var obraDetalleChart = new ApexCharts(document.querySelector("#obra-detalle-bar-chart"), obraDetalleOptions);
-    obraDetalleChart.render();
-
-    // TAB 5
-    // Gráfico de distribución de ingresos
-    var distribucionIngresosOptions = {
-        series: [45, 35, 20],
-        chart: {
-            type: 'donut',
-            height: 160
-        },
-        labels: ['Ingresos Propios', 'Aportaciones Federales', 'Aportaciones Estatales'],
-        colors: ['#727cf5', '#0acf97', '#6c757d'],
-        legend: {
-            show: false
-        },
-        plotOptions: {
-            pie: {
-                donut: {
-                    size: '70%',
-                    labels: {
-                        show: true,
-                        total: {
-                            show: true,
-                            label: 'Total',
-                            formatter: function (w) {
-                                return '100%'
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    };
-    var distribucionIngresosChart = new ApexCharts(document.querySelector("#distribucion-ingresos-chart"), distribucionIngresosOptions);
-    distribucionIngresosChart.render();
-
-    // Gráfico de distribución de gastos
-    var distribucionGastosOptions = {
-        series: [{
-            data: [65, 35]
-        }],
-        chart: {
-            type: 'bar',
-            height: 160,
-            toolbar: {
-                show: false
-            }
-        },
-        plotOptions: {
-            bar: {
-                horizontal: true,
-                barHeight: '70%',
-                borderRadius: 4,
-                distributed: true
-            }
-        },
-        colors: ['#727cf5', '#0acf97'],
-        dataLabels: {
-            enabled: false
-        },
-        xaxis: {
-            categories: ['Gasto Corriente', 'Gasto de Inversión'],
-            axisBorder: {
-                show: false
-            },
-            axisTicks: {
-                show: false
-            }
-        },
-        yaxis: {
-            show: false
-        },
-        grid: {
-            show: false
-        }
-    };
-    var distribucionGastosChart = new ApexCharts(document.querySelector("#distribucion-gastos-chart"), distribucionGastosOptions);
-    distribucionGastosChart.render();
-
-    // Gráfico de inversión pública
-    var inversionPublicaOptions = {
-        series: [{
-            name: 'Inversión',
-            data: [28, 22, 25, 15, 10]
-        }],
-        chart: {
-            type: 'bar',
-            height: 250,
-            toolbar: {
-                show: false
-            }
-        },
-        plotOptions: {
-            bar: {
-                borderRadius: 4,
-                horizontal: false,
-            }
-        },
-        dataLabels: {
-            enabled: false
-        },
-        colors: ['#727cf5'],
-        xaxis: {
-            categories: ['Seguridad', 'Educación', 'Obra Pública', 'Salud', 'Otros'],
-        },
-        yaxis: {
-            title: {
-                text: 'Millones de pesos'
-            }
-        },
-        tooltip: {
-            y: {
-                formatter: function (val) {
-                    return "$" + val + "M"
-                }
-            }
-        }
-    };
-    var inversionPublicaChart = new ApexCharts(document.querySelector("#inversion-publica-chart"), inversionPublicaOptions);
-    inversionPublicaChart.render();
-
-    // Gráfico de deuda y pasivos
-    var deudaPasivosOptions = {
-        series: [{
-            name: 'Deuda',
-            data: [85, 42]
-        }],
-        chart: {
-            type: 'bar',
-            height: 250,
-            toolbar: {
-                show: false
-            }
-        },
-        plotOptions: {
-            bar: {
-                borderRadius: 4,
-                horizontal: true,
-            }
-        },
-        dataLabels: {
-            enabled: false
-        },
-        colors: ['#fa5c7c'],
-        xaxis: {
-            categories: ['Deuda Total', 'Pasivos'],
-            title: {
-                text: 'Millones de pesos'
-            }
-        },
-        annotations: {
-            xaxis: [{
-                x: 72,
-                strokeDashArray: 0,
-                borderColor: '#0acf97',
-                label: {
-                    borderColor: '#0acf97',
-                    style: {
-                        color: '#fff',
-                        background: '#0acf97',
-                    },
-                    text: 'Capacidad de pago 72%',
-                }
-            }]
-        }
-    };
-    var deudaPasivosChart = new ApexCharts(document.querySelector("#deuda-pasivos-chart"), deudaPasivosOptions);
-    deudaPasivosChart.render();
 </script>
+<!--tab 2-->
+<script src="~/assets/js/dashboard/_dashboard_de.js" asp-append-version="true"></script>
+<!--tab 4-->
+<script src="~/assets/js/dashboard/_dashboard_op.js" asp-append-version="true"></script>
+<!--tab 6-->
+<script src="~/assets/js/dashboard/_dashboard_edu.js" asp-append-version="true"></script>
+<!--Script para imprimir el dashboard seleccionado-->
 <script>
     document.getElementById('btnPrintTab').addEventListener('click', function () {
         // Encuentra la pestaña activa

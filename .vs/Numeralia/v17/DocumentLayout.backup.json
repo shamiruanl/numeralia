@@ -1,30 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\xampp\\htdocs\\numeralia\\",
+  "WorkspaceRootPath": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\users\\yazmi\\onedrive\\documents\\facu\\servicio\\numeralia\\nazox\\assets\\js\\dashboard\\_dashboard_edu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\assets\\js\\dashboard\\_dashboard_edu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\users\\yazmi\\onedrive\\documents\\facu\\servicio\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_edu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_edu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\users\\yazmi\\onedrive\\documents\\facu\\servicio\\numeralia\\nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_fin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_fin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_du.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_du.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_de.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_de.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_seg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_seg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|c:\\xampp\\htdocs\\numeralia\\nazox\\views\\_shared\\partialviews\\_dashboard_op.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C3F4D6-E3C1-45F8-BF53-A1C6CBDB91D4}|Nazox\\Numeralia.csproj|solutionrelative:nazox\\views\\_shared\\partialviews\\_dashboard_op.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,78 +30,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_dashboard_edu.js",
+              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\assets\\js\\dashboard\\_dashboard_edu.js",
+              "RelativeDocumentMoniker": "Nazox\\assets\\js\\dashboard\\_dashboard_edu.js",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\assets\\js\\dashboard\\_dashboard_edu.js",
+              "RelativeToolTip": "Nazox\\assets\\js\\dashboard\\_dashboard_edu.js",
+              "ViewState": "AgIAACsBAAAAAAAAAAAuwDkBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-02T16:51:51.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Dashboard_FIN.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_FIN.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_FIN.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_FIN.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_FIN.cshtml",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAAAOsAAAAAAAAAAAAAAA==",
+              "Title": "_Dashboard_EDU.cshtml",
+              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_EDU.cshtml",
+              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_EDU.cshtml",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_EDU.cshtml",
+              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_EDU.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAGUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T16:24:05.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Dashboard_SEG.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_SEG.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_SEG.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_SEG.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_SEG.cshtml",
-              "ViewState": "AgIAAIAFAAAAAAAAAAAAAIYFAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T16:21:42.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Dashboard_OP.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_OP.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_OP.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_OP.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_OP.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T16:21:39.013Z",
+              "WhenOpened": "2025-07-02T15:35:12.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Dashboard_DU.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DU.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DU.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DU.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DU.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T16:21:27.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Dashboard_DE.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DE.cshtml",
-              "RelativeDocumentMoniker": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DE.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DE.cshtml",
-              "RelativeToolTip": "Nazox\\Views\\_Shared\\PartialViews\\_Dashboard_DE.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T14:27:55.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Nazox\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\xampp\\htdocs\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml*",
-              "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml*",
-              "ViewState": "AgIAANMDAAAAAAAAAAAAAFsDAAAbAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\yazmi\\OneDrive\\Documents\\Facu\\Servicio\\numeralia\\Nazox\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Nazox\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAAAG8BAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-27T17:12:36.636Z",
               "EditorCaption": ""
