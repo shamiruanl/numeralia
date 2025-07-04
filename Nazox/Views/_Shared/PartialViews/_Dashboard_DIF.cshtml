@@ -1,401 +1,402 @@
 ﻿<!--TAB 7-->
+<div id="tab7" class="tab-content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sección de Discapacidad -->
+            <div class="col-12">
+                <h3 class="mt-4 mb-3">Estadísticas de Discapacidad</h3>
+            </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <!-- Sección de Discapacidad -->
-        <div class="col-12">
-            <h3 class="mt-4 mb-3">Estadísticas de Discapacidad</h3>
+            <!-- Población total -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Población con discapacidad</h5>
+                                <h2 class="mb-0">12,850</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Registrados en el sistema</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-group-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Número total de servicios -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Total de servicios</h5>
+                                <h2 class="mb-0">28,450</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Brindados anualmente</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-service-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ciudadanos atendidos -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Ciudadanos atendidos</h5>
+                                <h2 class="mb-0">8,750</h2>
+                                <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-user-heart-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promedio de servicios -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Promedio de servicios</h5>
+                                <h2 class="mb-0">3.25</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Por ciudadano</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-calculator-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de pirámide poblacional por género -->
+            <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución por género</h5>
+                        <div id="piramide-genero-chart" class="apex-charts" style="min-height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de pirámide poblacional por edad -->
+            <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución por rangos de edad</h5>
+                        <div id="piramide-edad-chart" class="apex-charts" style="min-height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de tipos de discapacidad -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Tipos de discapacidad</h5>
+                        <div id="discapacidad-tipo-chart" class="apex-charts" style="min-height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de distribución de servicios -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución de servicios</h5>
+                        <div id="servicios-tipo-chart" class="apex-charts" style="min-height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de ciudadanos por tipo de servicio -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Ciudadanos por tipo de servicio</h5>
+                        <div id="ciudadanos-servicio-chart" class="apex-charts" style="min-height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Población total -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Población con discapacidad</h5>
-                            <h2 class="mb-0">12,850</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Registrados en el sistema</small></p>
+        <!-- Sección de Adultos Mayores -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Adultos Mayores</h3>
+            </div>
+
+            <!-- Número total de adultos mayores atendidos -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Adultos mayores atendidos</h5>
+                                <h2 class="mb-0">6,420</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Registrados en el sistema</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-user-star-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-group-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de distribución por tipo de atención -->
+            <div class="col-xl-8 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución por tipo de atención</h5>
+                        <div id="adultos-atencion-chart" class="apex-charts" style="min-height: 250px;"></div>
+                        <div class="row text-center mt-2">
+                            <div class="col-4 border-end">
+                                <p class="text-muted mb-1">Asesorías</p>
+                                <h6 class="mb-0">3,850</h6>
+                            </div>
+                            <div class="col-4 border-end">
+                                <p class="text-muted mb-1">Casos de vulneración</p>
+                                <h6 class="mb-0">1,250</h6>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted mb-1">Actividades</p>
+                                <h6 class="mb-0">1,320</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Número total de servicios -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Total de servicios</h5>
-                            <h2 class="mb-0">28,450</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Brindados anualmente</small></p>
+        <!-- Sección de Asistencia Social -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Asistencia Social</h3>
+            </div>
+
+            <!-- Número total de personas atendidas -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Personas atendidas</h5>
+                                <h2 class="mb-0">15,280</h2>
+                                <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-team-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-service-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Número total de servicios -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Total de servicios</h5>
+                                <h2 class="mb-0">22,150</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Brindados anualmente</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-hand-heart-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de distribución de servicios -->
+            <div class="col-xl-4 col-md-12 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución de servicios</h5>
+                        <div id="asistencia-servicios-chart" class="apex-charts" style="min-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Defensoría -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Defensoría</h3>
+            </div>
+
+            <!-- Número total de familias atendidas -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Familias atendidas</h5>
+                                <h2 class="mb-0">2,850</h2>
+                                <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-home-4-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Número total de servicios -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Total de servicios</h5>
+                                <h2 class="mb-0">5,420</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Brindados</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-customer-service-2-line font-size-24 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Número total de otras actividades -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Otras actividades</h5>
+                                <h2 class="mb-0">1,250</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Realizadas</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-calendar-todo-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Ciudadanos atendidos -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Ciudadanos atendidos</h5>
-                            <h2 class="mb-0">8,750</h2>
-                            <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+        <!-- Sección de Unidad de Servicios Familiares -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Unidad de Servicios Familiares</h3>
+            </div>
+
+            <!-- Número total de talleres -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Talleres realizados</h5>
+                                <h2 class="mb-0">320</h2>
+                                <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-clipboard-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-user-heart-line font-size-24 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de distribución de talleres -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución de talleres</h5>
+                        <div id="talleres-distribucion-chart" class="apex-charts" style="min-height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Número total de personas en talleres -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Personas en talleres</h5>
+                                <h2 class="mb-0">4,850</h2>
+                                <p class="text-muted mb-0 mt-1"><small>Participantes</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-user-3-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico de características de participantes -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Perfil de participantes</h5>
+                        <div id="participantes-caracteristicas-chart" class="apex-charts" style="min-height: 200px;"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Promedio de servicios -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Promedio de servicios</h5>
-                            <h2 class="mb-0">3.25</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Por ciudadano</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-calculator-line font-size-24 text-primary"></i>
+        <!-- Sección de Infancia y Familia -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Infancia y Familia</h3>
+            </div>
+
+            <!-- Número de servicios otorgados -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">Servicios otorgados</h5>
+                                <h2 class="mb-0">8,750</h2>
+                                <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <i class="ri-home-heart-line font-size-24 text-primary"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Gráfico de pirámide poblacional por género -->
-        <div class="col-xl-6 col-md-12 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución por género</h5>
-                    <div id="piramide-genero-chart" class="apex-charts" style="min-height: 350px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de pirámide poblacional por edad -->
-        <div class="col-xl-6 col-md-12 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución por rangos de edad</h5>
-                    <div id="piramide-edad-chart" class="apex-charts" style="min-height: 350px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de tipos de discapacidad -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Tipos de discapacidad</h5>
-                    <div id="discapacidad-tipo-chart" class="apex-charts" style="min-height: 300px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de distribución de servicios -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución de servicios</h5>
-                    <div id="servicios-tipo-chart" class="apex-charts" style="min-height: 300px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de ciudadanos por tipo de servicio -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Ciudadanos por tipo de servicio</h5>
-                    <div id="ciudadanos-servicio-chart" class="apex-charts" style="min-height: 300px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Adultos Mayores -->
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-3">Adultos Mayores</h3>
-        </div>
-
-        <!-- Número total de adultos mayores atendidos -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Adultos mayores atendidos</h5>
-                            <h2 class="mb-0">6,420</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Registrados en el sistema</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-user-star-line font-size-24 text-primary"></i>
-                        </div>
+            <!-- Gráfico de distribución de servicios (versión 1) -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Distribución por tipo de servicio</h5>
+                        <div id="servicios-infancia-chart-1" class="apex-charts" style="min-height: 200px;"></div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Gráfico de distribución por tipo de atención -->
-        <div class="col-xl-8 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución por tipo de atención</h5>
-                    <div id="adultos-atencion-chart" class="apex-charts" style="min-height: 250px;"></div>
-                    <div class="row text-center mt-2">
-                        <div class="col-4 border-end">
-                            <p class="text-muted mb-1">Asesorías</p>
-                            <h6 class="mb-0">3,850</h6>
-                        </div>
-                        <div class="col-4 border-end">
-                            <p class="text-muted mb-1">Casos de vulneración</p>
-                            <h6 class="mb-0">1,250</h6>
-                        </div>
-                        <div class="col-4">
-                            <p class="text-muted mb-1">Actividades</p>
-                            <h6 class="mb-0">1,320</h6>
-                        </div>
+            <!-- Gráfico de distribución de servicios (versión 2) -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Participación en servicios</h5>
+                        <div id="servicios-infancia-chart-2" class="apex-charts" style="min-height: 200px;"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Asistencia Social -->
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-3">Asistencia Social</h3>
-        </div>
-
-        <!-- Número total de personas atendidas -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Personas atendidas</h5>
-                            <h2 class="mb-0">15,280</h2>
-                            <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-team-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Número total de servicios -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Total de servicios</h5>
-                            <h2 class="mb-0">22,150</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Brindados anualmente</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-hand-heart-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de distribución de servicios -->
-        <div class="col-xl-4 col-md-12 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución de servicios</h5>
-                    <div id="asistencia-servicios-chart" class="apex-charts" style="min-height: 200px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Defensoría -->
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-3">Defensoría</h3>
-        </div>
-
-        <!-- Número total de familias atendidas -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Familias atendidas</h5>
-                            <h2 class="mb-0">2,850</h2>
-                            <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-home-4-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Número total de servicios -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Total de servicios</h5>
-                            <h2 class="mb-0">5,420</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Brindados</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-customer-service-2-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Número total de otras actividades -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Otras actividades</h5>
-                            <h2 class="mb-0">1,250</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Realizadas</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-calendar-todo-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Unidad de Servicios Familiares -->
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-3">Unidad de Servicios Familiares</h3>
-        </div>
-
-        <!-- Número total de talleres -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Talleres realizados</h5>
-                            <h2 class="mb-0">320</h2>
-                            <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-clipboard-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de distribución de talleres -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución de talleres</h5>
-                    <div id="talleres-distribucion-chart" class="apex-charts" style="min-height: 200px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Número total de personas en talleres -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Personas en talleres</h5>
-                            <h2 class="mb-0">4,850</h2>
-                            <p class="text-muted mb-0 mt-1"><small>Participantes</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-user-3-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de características de participantes -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Perfil de participantes</h5>
-                    <div id="participantes-caracteristicas-chart" class="apex-charts" style="min-height: 200px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Infancia y Familia -->
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-3">Infancia y Familia</h3>
-        </div>
-
-        <!-- Número de servicios otorgados -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-1">Servicios otorgados</h5>
-                            <h2 class="mb-0">8,750</h2>
-                            <p class="text-muted mb-0 mt-1"><small>En el último año</small></p>
-                        </div>
-                        <div class="flex-shrink-0 align-self-center">
-                            <i class="ri-home-heart-line font-size-24 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de distribución de servicios (versión 1) -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Distribución por tipo de servicio</h5>
-                    <div id="servicios-infancia-chart-1" class="apex-charts" style="min-height: 200px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gráfico de distribución de servicios (versión 2) -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Participación en servicios</h5>
-                    <div id="servicios-infancia-chart-2" class="apex-charts" style="min-height: 200px;"></div>
                 </div>
             </div>
         </div>
