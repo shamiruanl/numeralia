@@ -141,6 +141,7 @@
         <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
         <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
         <button class="tab-button" onclick="openTab(event, 'tab6')">Educación</button>
+        <button class="tab-button" onclick="openTab(event, 'tab7')">DIF</button>
     </div>
     <!--Filtros-->
     <div class="row mx-auto mt-1">
@@ -177,6 +178,8 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_FIN")
     <!--TAB 6 EDUCACIÓN-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_EDU")
+    <!--TAB 7 DIF-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_DIF")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -708,6 +711,447 @@
     };
     var distribucionExamenesChart = new ApexCharts(document.querySelector("#distribucion-examenes-chart"), distribucionExamenesOptions);
     distribucionExamenesChart.render();
+    // Pirámide poblacional por género
+    var piramideGeneroOptions = {
+        series: [
+            {
+                name: 'Hombres',
+                data: [450, 520, 600, 550, 500, 400, 350, 300, 250, 200, 150, 100]
+            },
+            {
+                name: 'Mujeres',
+                data: [420, 500, 580, 530, 480, 420, 380, 320, 280, 220, 180, 120]
+            }
+        ],
+        chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+            toolbar: {
+                show: false
+            }
+        },
+        colors: ['#727cf5', '#fa5c7c'],
+        plotOptions: {
+            bar: {
+                horizontal: true,
+                barHeight: '80%',
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: 1,
+            colors: ["#fff"]
+        },
+        xaxis: {
+            categories: ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55+'],
+            title: {
+                text: 'Número de personas'
+            }
+        },
+        yaxis: {
+            title: {
+                text: 'Rango de edad'
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return Math.abs(val) + " personas"
+                }
+            }
+        },
+        legend: {
+            position: 'top',
+            horizontalAlign: 'center'
+        }
+    };
+    var piramideGeneroChart = new ApexCharts(document.querySelector("#piramide-genero-chart"), piramideGeneroOptions);
+    piramideGeneroChart.render();
+
+    // Pirámide poblacional por edad (versión simplificada)
+    var piramideEdadOptions = {
+        series: [
+            {
+                name: 'Hombres',
+                data: [850, 920, 1000, 950, 900, 800, 750, 700, 650, 600, 550, 500]
+            },
+            {
+                name: 'Mujeres',
+                data: [820, 900, 980, 930, 880, 820, 780, 720, 680, 620, 580, 520]
+            }
+        ],
+        chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+            toolbar: {
+                show: false
+            }
+        },
+        colors: ['#727cf5', '#fa5c7c'],
+        plotOptions: {
+            bar: {
+                horizontal: true,
+                barHeight: '80%',
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: 1,
+            colors: ["#fff"]
+        },
+        xaxis: {
+            categories: ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55+'],
+            title: {
+                text: 'Número de personas'
+            }
+        },
+        yaxis: {
+            title: {
+                text: 'Rango de edad'
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return Math.abs(val) + " personas"
+                }
+            }
+        },
+        legend: {
+            position: 'top',
+            horizontalAlign: 'center'
+        }
+    };
+    var piramideEdadChart = new ApexCharts(document.querySelector("#piramide-edad-chart"), piramideEdadOptions);
+    piramideEdadChart.render();
+
+    // Gráfico de tipos de discapacidad
+    var discapacidadTipoOptions = {
+        series: [35, 25, 15, 10, 8, 7],
+        chart: {
+            type: 'donut',
+            height: 300
+        },
+        labels: ['Motriz', 'Visual', 'Auditiva', 'Intelectual', 'Psicosocial', 'Múltiple'],
+        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1', '#6c757d'],
+        legend: {
+            position: 'bottom'
+        },
+        plotOptions: {
+            pie: {
+                donut: {
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                return '12,850'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var discapacidadTipoChart = new ApexCharts(document.querySelector("#discapacidad-tipo-chart"), discapacidadTipoOptions);
+    discapacidadTipoChart.render();
+
+    // Gráfico de distribución de servicios
+    var serviciosTipoOptions = {
+        series: [{
+            data: [45, 25, 20, 10]
+        }],
+        chart: {
+            type: 'bar',
+            height: 300,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#727cf5'],
+        xaxis: {
+            categories: ['Rehabilitación Física', 'Atención Autismo', 'Terapias Multidisciplinarias', 'Inclusión Social'],
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return val + "% del total"
+                }
+            }
+        }
+    };
+    var serviciosTipoChart = new ApexCharts(document.querySelector("#servicios-tipo-chart"), serviciosTipoOptions);
+    serviciosTipoChart.render();
+
+    // Gráfico de ciudadanos por tipo de servicio
+    var ciudadanosServicioOptions = {
+        series: [{
+            data: [4200, 2500, 1500, 550]
+        }],
+        chart: {
+            type: 'bar',
+            height: 300,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: false,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#0acf97'],
+        xaxis: {
+            categories: ['Rehabilitación Física', 'Atención Autismo', 'Terapias Multidisciplinarias', 'Inclusión Social'],
+        },
+        yaxis: {
+            title: {
+                text: 'Número de ciudadanos'
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return val + " ciudadanos"
+                }
+            }
+        }
+    };
+    var ciudadanosServicioChart = new ApexCharts(document.querySelector("#ciudadanos-servicio-chart"), ciudadanosServicioOptions);
+    ciudadanosServicioChart.render();
+     // Gráfico de atención a adultos mayores
+    var adultosAtencionOptions = {
+        series: [{
+            data: [3850, 1250, 1320]
+        }],
+        chart: {
+            type: 'bar',
+            height: 250,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: false,
+                distributed: true,
+                columnWidth: '45%'
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#727cf5', '#0acf97', '#fa5c7c'],
+        xaxis: {
+            categories: ['Asesorías', 'Vulneración derechos', 'Actividades'],
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return val + " adultos"
+                }
+            }
+        }
+    };
+    var adultosAtencionChart = new ApexCharts(document.querySelector("#adultos-atencion-chart"), adultosAtencionOptions);
+    adultosAtencionChart.render();
+
+    // Gráfico de servicios de asistencia social
+    var asistenciaServiciosOptions = {
+        series: [35, 20, 15, 12, 10, 8],
+        chart: {
+            type: 'pie',
+            height: 200
+        },
+        labels: ['Aparatos ortopédicos', 'Apoyos hospitalarios', 'Medicamentos', 'Diversos', 'Apoyos funerarios', 'Albergues'],
+        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1', '#6c757d'],
+        legend: {
+            position: 'bottom'
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+    var asistenciaServiciosChart = new ApexCharts(document.querySelector("#asistencia-servicios-chart"), asistenciaServiciosOptions);
+    asistenciaServiciosChart.render();
+    var talleresDistribucionOptions = {
+        series: [45, 25, 20, 10],
+        chart: {
+            type: 'donut',
+            height: 200
+        },
+        labels: ['Adultos', 'Adolescentes', 'Niños', 'Psicológica'],
+        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00'],
+        legend: {
+            position: 'bottom'
+        },
+        plotOptions: {
+            pie: {
+                donut: {
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                return '320'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var talleresDistribucionChart = new ApexCharts(document.querySelector("#talleres-distribucion-chart"), talleresDistribucionOptions);
+    talleresDistribucionChart.render();
+
+    // Gráfico de características de participantes
+    var participantesCaracteristicasOptions = {
+        series: [{
+            data: [2200, 1500, 800, 350]
+        }],
+        chart: {
+            type: 'bar',
+            height: 200,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#39afd1'],
+        xaxis: {
+            categories: ['Adultos', 'Adolescentes', 'Niños', 'Psicológica'],
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return val + " personas"
+                }
+            }
+        }
+    };
+    var participantesCaracteristicasChart = new ApexCharts(document.querySelector("#participantes-caracteristicas-chart"), participantesCaracteristicasOptions);
+    participantesCaracteristicasChart.render();
+    var serviciosInfanciaOptions1 = {
+        series: [25, 20, 18, 15, 12, 7, 3],
+        chart: {
+            type: 'donut',
+            height: 200
+        },
+        labels: [
+            'Actividades productivas', 
+            'Culturales', 
+            'Vida saludable', 
+            'Casa en rosa', 
+            'Atención infantil', 
+            'Guardería', 
+            'PAPTI'
+        ],
+        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1', '#6c757d', '#313a46'],
+        legend: {
+            position: 'bottom'
+        },
+        plotOptions: {
+            pie: {
+                donut: {
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                return '8,750'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var serviciosInfanciaChart1 = new ApexCharts(document.querySelector("#servicios-infancia-chart-1"), serviciosInfanciaOptions1);
+    serviciosInfanciaChart1.render();
+
+    // Gráfico de distribución de servicios (versión 2 - Barras)
+    var serviciosInfanciaOptions2 = {
+        series: [{
+            name: 'Participantes',
+            data: [2180, 1750, 1575, 1310, 1050, 610, 260]
+        }],
+        chart: {
+            type: 'bar',
+            height: 200,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#727cf5'],
+        xaxis: {
+            categories: [
+                'Productivas', 
+                'Culturales', 
+                'Saludable', 
+                'Casa rosa', 
+                'Infantil', 
+                'Guardería', 
+                'PAPTI'
+            ],
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return val + " personas"
+                }
+            }
+        }
+    };
+    var serviciosInfanciaChart2 = new ApexCharts(document.querySelector("#servicios-infancia-chart-2"), serviciosInfanciaOptions2);
+    serviciosInfanciaChart2.render();
 </script>
 <!--tab 2-->
 <script src="~/assets/js/dashboard/_dashboard_de.js" asp-append-version="true"></script>
@@ -715,6 +1159,8 @@
 <script src="~/assets/js/dashboard/_dashboard_op.js" asp-append-version="true"></script>
 <!--tab 6-->
 <script src="~/assets/js/dashboard/_dashboard_edu.js" asp-append-version="true"></script>
+<!--tab 7-->
+<script src="~/assets/js/dashboard/_dashboard_dif.js" asp-append-version="true"></script>
 <!--Script para imprimir el dashboard seleccionado-->
 <script>
     document.getElementById('btnPrintTab').addEventListener('click', function () {

@@ -1390,6 +1390,7 @@
     <Content Include="Views\_Shared\Layouts\_layout_preloader.cshtml" />
     <Content Include="Views\Dashboard\Index_OLD.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DE.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_DIF.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DU.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_OP.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_SEG.cshtml" />
