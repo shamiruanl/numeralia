@@ -142,6 +142,8 @@
         <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
         <button class="tab-button" onclick="openTab(event, 'tab6')">Educación</button>
         <button class="tab-button" onclick="openTab(event, 'tab7')">DIF</button>
+        <button class="tab-button" onclick="openTab(event, 'tab8')">Mujer</button>
+
     </div>
     <!--Filtros-->
     <div class="row mx-auto mt-1">
@@ -180,6 +182,8 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_EDU")
     <!--TAB 7 DIF-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_DIF")
+    <!--TAB 8 MUJERES-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_MUJ")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -1190,4 +1194,76 @@
             printWindow.close();
         }, 500);
     });
+    // Gráfico de distribución de servicios
+    var serviciosOptions = {
+        series: [35, 45, 20],
+        chart: {
+            type: 'donut',
+            height: 200,
+        },
+        colors: ['#f06292', '#ec407a', '#e91e63'],
+        labels: ['Prevención', 'Atención', 'Soporte'],
+        legend: {
+            show: false
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+
+    var serviciosChart = new ApexCharts(document.querySelector("#mujeres-servicios-chart"), serviciosOptions);
+    serviciosChart.render();
+
+    // Gráfico de evolución de casos
+    var casosOptions = {
+        series: [{
+            name: 'Casos atendidos',
+            data: [85, 72, 90, 105, 115, 95, 110, 125, 140, 130, 145, 160]
+        }],
+        chart: {
+            type: 'area',
+            height: 350,
+            toolbar: {
+                show: false
+            }
+        },
+        colors: ['#d81b60'],
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shadeIntensity: 1,
+                opacityFrom: 0.7,
+                opacityTo: 0.3,
+                stops: [0, 90, 100]
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 2
+        },
+        xaxis: {
+            categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return val + " casos"
+                }
+            }
+        }
+    };
+
+    var casosChart = new ApexCharts(document.querySelector("#mujeres-casos-chart"), casosOptions);
+    casosChart.render();
 </script>
