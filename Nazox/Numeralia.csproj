@@ -214,8 +214,11 @@
     <Content Include="assets\images\users\avatar-7.jpg" />
     <Content Include="assets\images\users\avatar-8.jpg" />
     <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\dashboard\dashboard_tabs_scroll.js" />
+    <Content Include="assets\js\dashboard\_dashboard_air.js" />
     <Content Include="assets\js\dashboard\_dashboard_de.js" />
     <Content Include="assets\js\dashboard\_dashboard_edu.js" />
+    <Content Include="assets\js\dashboard\_dashboard_ma.js" />
     <Content Include="assets\js\dashboard\_dashboard_op.js" />
     <Content Include="assets\js\pages\apexcharts.init.js" />
     <Content Include="assets\js\pages\calendar.init.js" />
@@ -1389,6 +1392,7 @@
     <Content Include="Views\_Shared\Layouts\_layout_light_sidebar.cshtml" />
     <Content Include="Views\_Shared\Layouts\_layout_preloader.cshtml" />
     <Content Include="Views\Dashboard\Index_OLD.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_AIR.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DE.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_DIF.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DU.cshtml" />
@@ -1397,6 +1401,7 @@
     <Content Include="Views\_Shared\PartialViews\_Dashboard_FIN.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_EDU.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_MUJ.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_MA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -20,12 +20,35 @@
         font-family: Arial, sans-serif;
         margin: 20px auto;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative; /* Importante para el posicionamiento de las flechas */
+        overflow: hidden; /* Oculta las barras de desplazamiento por defecto */
     }
+
+    /* Nuevo contenedor para el scroll de las tabs */
+    .scrollable-tabs-wrapper {
+        overflow-x: auto; /* Permite el scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* Mejora el scroll en dispositivos móviles */
+        scroll-behavior: smooth; /* Desplazamiento suave con el teclado/rueda del ratón */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        white-space: nowrap; /* Asegura que los tabs estén en una sola línea */
+        /* display: flex; /* Si usas flexbox aquí, los botones se autoajustarán */
+        /* Asegura que el contenedor de las tabs sea lo suficientemente grande */
+        position: relative; /* Para el posicionamiento de las flechas */
+        padding: 0 40px; /* Espacio para las flechas */
+    }
+
+        /* Ocultar la barra de desplazamiento para navegadores basados en WebKit (Chrome, Safari) */
+        .scrollable-tabs-wrapper::-webkit-scrollbar {
+            display: none;
+        }
 
     /* Estilo para los botones de las pestañas */
     .tabs {
-        display: flex;
+        display: flex; /* Mantiene los botones en fila */
         border-bottom: 1px solid #ddd;
+        /* Remover: white-space: nowrap; - ya está en el wrapper */
+        /* Remover: transition: transform 0.3s ease-out; - se manejará con scrollLeft */
     }
 
     .tab-button {
@@ -35,6 +58,7 @@
         cursor: pointer;
         transition: background-color 0.3s;
         font-size: 16px;
+        flex-shrink: 0; /* Evita que los botones se encojan y se mantengan en una línea */
     }
 
         .tab-button:hover {
@@ -53,6 +77,45 @@
         border: 1px solid #ddd;
         border-top: none;
     }
+
+    /* Estilos para las flechas de navegación */
+    .scroll-arrow {
+        position: absolute;
+        top: 0;
+        height: 48px; /* Ajusta a la altura de la barra de tabs */
+        width: 40px; /* Ancho del área del hover */
+        background: rgba(255,255,255,0.8); /* Fondo semi-transparente para ver tabs debajo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0; /* Ocultar por defecto */
+        transition: opacity 0.3s ease-in-out;
+        z-index: 10; /* Asegura que estén por encima de las pestañas */
+    }
+
+        .scroll-arrow.left {
+            left: 0;
+        }
+
+        .scroll-arrow.right {
+            right: 0;
+        }
+
+        .scroll-arrow i {
+            font-size: 24px; /* Tamaño del icono de la flecha */
+            color: #555;
+        }
+
+        /* Mostrar flechas solo al hacer hover sobre su área */
+        .scroll-arrow:hover {
+            opacity: 1;
+        }
+
+        /* Ocultar flechas si no hay desbordamiento (se gestionará con JS) */
+        .scroll-arrow.hidden {
+            display: none;
+        }
 
     /* Estilos adicionales para las cards */
     .card-title {
@@ -133,18 +196,25 @@
 
 <!--SECCION DE TABS-->
 <div class="tabs-container">
+    <div class="scroll-arrow left" id="scrollArrowLeft"><i data-feather="chevron-left"></i></div>
     <!-- Botones de las pestañas -->
-    <div class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'tab1')">Desarrollo Urbano</button>
-        <button class="tab-button" onclick="openTab(event, 'tab2')">Desarrollo Económico</button>
-        <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
-        <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
-        <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
-        <button class="tab-button" onclick="openTab(event, 'tab6')">Educación</button>
-        <button class="tab-button" onclick="openTab(event, 'tab7')">DIF</button>
-        <button class="tab-button" onclick="openTab(event, 'tab8')">Mujer</button>
-
+    <div class="scrollable-tabs-wrapper" id="scrollableTabsWrapper">
+        <div class="tabs" id="tabButtonsContainer">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">Desarrollo Urbano</button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">Desarrollo Económico</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Seguridad</button>
+            <button class="tab-button" onclick="openTab(event, 'tab4')">Obras Públicas</button>
+            <button class="tab-button" onclick="openTab(event, 'tab5')">Finanzas y Tesorería</button>
+            <button class="tab-button" onclick="openTab(event, 'tab6')">Educación</button>
+            <button class="tab-button" onclick="openTab(event, 'tab7')">DIF</button>
+            <button class="tab-button" onclick="openTab(event, 'tab8')">Mujer</button>
+            <button class="tab-button" onclick="openTab(event, 'tab9')">Asuntos indígenas y religiosos</button>
+            <button class="tab-button" onclick="openTab(event, 'tab10')">Medio Ambiente</button>
+        </div>
     </div>
+
+    <div class="scroll-arrow right" id="scrollArrowRight"><i data-feather="chevron-right"></i></div>
+
     <!--Filtros-->
     <div class="row mx-auto mt-1">
         <div class="col-md-12">
@@ -184,6 +254,10 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_DIF")
     <!--TAB 8 MUJERES-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_MUJ")
+    <!--TAB 9 ASUNTOS INDÍGENAS Y RELIGIOSOS-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_AIR")
+    <!--TAB 10 MEDIO AMBIENTE-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_MA")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -227,6 +301,8 @@
 <script>
     feather.replace(); // Inicializa Feather Icons para que los SVGs se rendericen
 </script>
+
+<script src="~/assets/js/dashboard/dashboard_tabs_scroll.js"></script>
 
 <script type="text/javascript">
     function openTab(evt, tabId) {
@@ -1080,12 +1156,12 @@
             height: 200
         },
         labels: [
-            'Actividades productivas', 
-            'Culturales', 
-            'Vida saludable', 
-            'Casa en rosa', 
-            'Atención infantil', 
-            'Guardería', 
+            'Actividades productivas',
+            'Culturales',
+            'Vida saludable',
+            'Casa en rosa',
+            'Atención infantil',
+            'Guardería',
             'PAPTI'
         ],
         colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1', '#6c757d', '#313a46'],
@@ -1137,12 +1213,12 @@
         colors: ['#727cf5'],
         xaxis: {
             categories: [
-                'Productivas', 
-                'Culturales', 
-                'Saludable', 
-                'Casa rosa', 
-                'Infantil', 
-                'Guardería', 
+                'Productivas',
+                'Culturales',
+                'Saludable',
+                'Casa rosa',
+                'Infantil',
+                'Guardería',
                 'PAPTI'
             ],
         },
@@ -1163,6 +1239,10 @@
 <script src="~/assets/js/dashboard/_dashboard_op.js" asp-append-version="true"></script>
 <!--tab 6-->
 <script src="~/assets/js/dashboard/_dashboard_edu.js" asp-append-version="true"></script>
+<!--tab 9-->
+<script src="~/assets/js/dashboard/_dashboard_air.js" asp-append-version="true"></script>
+<!--tab 10-->
+<script src="~/assets/js/dashboard/_dashboard_ma.js" asp-append-version="true"></script>
 <!--Script para imprimir el dashboard seleccionado-->
 <script>
     document.getElementById('btnPrintTab').addEventListener('click', function () {
