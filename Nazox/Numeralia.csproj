@@ -220,6 +220,7 @@
     <Content Include="assets\js\dashboard\_dashboard_edu.js" />
     <Content Include="assets\js\dashboard\_dashboard_ma.js" />
     <Content Include="assets\js\dashboard\_dashboard_op.js" />
+    <Content Include="assets\js\dashboard\_dashboard_sal.js" />
     <Content Include="assets\js\pages\apexcharts.init.js" />
     <Content Include="assets\js\pages\calendar.init.js" />
     <Content Include="assets\js\pages\chartjs.init.js" />
@@ -1402,6 +1403,7 @@
     <Content Include="Views\_Shared\PartialViews\_Dashboard_EDU.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_MUJ.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_MA.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_SAL.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
