@@ -211,6 +211,7 @@
             <button class="tab-button" onclick="openTab(event, 'tab9')">Asuntos indígenas y religiosos</button>
             <button class="tab-button" onclick="openTab(event, 'tab10')">Medio Ambiente</button>
             <button class="tab-button" onclick="openTab(event, 'tab11')">Salud</button>
+            <button class="tab-button" onclick="openTab(event, 'tab12')">Bienestar Animal</button>
         </div>
     </div>
 
@@ -261,6 +262,9 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_MA")
     <!--TAB 11 SALUD-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_SAL")
+    <!--TAB 12 BIENESTAR ANIMAL-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_BA")
+
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -1351,4 +1355,301 @@
 
     var casosChart = new ApexCharts(document.querySelector("#mujeres-casos-chart"), casosOptions);
     casosChart.render();
+   
+    // Gráficos pequeños para las cards
+    const miniChartOptions = {
+        chart: {
+            type: 'area',
+            height: 80,
+            sparkline: {
+                enabled: true
+            },
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 2
+        },
+        fill: {
+            opacity: 0.2,
+        },
+        tooltip: {
+            fixed: {
+                enabled: false
+            },
+            x: {
+                show: false
+            },
+            marker: {
+                show: false
+            }
+        }
+    };
+
+    // Gráficos para cada card
+    new ApexCharts(document.querySelector("#atencion-ciudadanos-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Atendidos',
+            data: [120, 135, 150, 145, 160, 175, 180, 190, 185, 200, 210, 220]
+        }],
+        colors: ['#727cf5']
+    }).render();
+
+    new ApexCharts(document.querySelector("#reportes-atendidos-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Reportes',
+            data: [80, 95, 100, 110, 105, 115, 120, 125, 130, 135, 140, 150]
+        }],
+        colors: ['#0acf97']
+    }).render();
+
+    new ApexCharts(document.querySelector("#casos-fiscalia-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Casos',
+            data: [5, 6, 7, 8, 7, 8, 9, 10, 9, 10, 11, 12]
+        }],
+        colors: ['#fa5c7c']
+    }).render();
+
+    new ApexCharts(document.querySelector("#expedientes-fiscalia-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Expedientes',
+            data: [8, 9, 10, 11, 10, 12, 13, 14, 15, 14, 15, 16]
+        }],
+        colors: ['#ffbc00']
+    }).render();
+
+    new ApexCharts(document.querySelector("#esterilizaciones-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Esterilizaciones',
+            data: [200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420]
+        }],
+        colors: ['#39afd1']
+    }).render();
+
+    new ApexCharts(document.querySelector("#vacunas-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Vacunas',
+            data: [350, 380, 400, 420, 450, 480, 500, 520, 550, 580, 600, 620]
+        }],
+        colors: ['#6c757d']
+    }).render();
+
+    new ApexCharts(document.querySelector("#adopciones-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Adopciones',
+            data: [25, 28, 30, 32, 35, 38, 40, 42, 45, 48, 50, 52]
+        }],
+        colors: ['#727cf5']
+    }).render();
+
+    new ApexCharts(document.querySelector("#brigadas-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Brigadas',
+            data: [2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8]
+        }],
+        colors: ['#0acf97']
+    }).render();
+
+    new ApexCharts(document.querySelector("#platicas-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Pláticas',
+            data: [5, 6, 7, 8, 7, 8, 9, 10, 9, 10, 11, 12]
+        }],
+        colors: ['#fa5c7c']
+    }).render();
+
+    new ApexCharts(document.querySelector("#comites-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Comités',
+            data: [1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5]
+        }],
+        colors: ['#ffbc00']
+    }).render();
+
+    new ApexCharts(document.querySelector("#campanias-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Campañas',
+            data: [1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7]
+        }],
+        colors: ['#39afd1']
+    }).render();
+
+    new ApexCharts(document.querySelector("#campanias-masivas-chart"), {
+        ...miniChartOptions,
+        series: [{
+            name: 'Masivas',
+            data: [0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4]
+        }],
+        colors: ['#6c757d']
+    }).render();
+
+    // Gráfico de distribución de servicios veterinarios
+    var serviciosVeterinariosOptions = {
+        series: [35, 25, 20, 15, 5],
+        chart: {
+            height: 300,
+            type: 'pie',
+        },
+        labels: ['Esterilizaciones', 'Vacunaciones', 'Consultas', 'Urgencias', 'Otros'],
+        colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00', '#39afd1'],
+        legend: {
+            position: 'bottom'
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+    var serviciosVeterinariosChart = new ApexCharts(document.querySelector("#servicios-veterinarios-chart"), serviciosVeterinariosOptions);
+    serviciosVeterinariosChart.render();
+
+    // Gráfico de tendencia mensual de atenciones
+    var tendenciaAtencionesOptions = {
+        series: [{
+            name: "Atenciones",
+            data: [120, 135, 150, 145, 160, 175, 180, 190, 185, 200, 210, 220]
+        }, {
+            name: "Reportes",
+            data: [80, 95, 100, 110, 105, 115, 120, 125, 130, 135, 140, 150]
+        }],
+        chart: {
+            height: 350,
+            type: 'line',
+            toolbar: {
+                show: true
+            }
+        },
+        stroke: {
+            curve: 'smooth',
+            width: [3, 3]
+        },
+        xaxis: {
+            categories: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+        },
+        colors: ['#727cf5', '#0acf97'],
+        markers: {
+            size: 5
+        },
+        legend: {
+            position: 'top'
+        },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return value + " atenciones";
+                }
+            }
+        }
+    };
+    var tendenciaAtencionesChart = new ApexCharts(document.querySelector("#tendencia-atenciones-chart"), tendenciaAtencionesOptions);
+    tendenciaAtencionesChart.render();
+
+    // Gráfico de tipo de reportes atendidos
+    var tipoReportesOptions = {
+        series: [{
+            name: 'Reportes',
+            data: [450, 320, 280, 150, 50]
+        }],
+        chart: {
+            type: 'bar',
+            height: 350
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        xaxis: {
+            categories: ['Maltrato animal', 'Animales en abandono', 'Animales enfermos', 'Animales peligrosos', 'Otros'],
+        },
+        colors: ['#727cf5']
+    };
+    var tipoReportesChart = new ApexCharts(document.querySelector("#tipo-reportes-chart"), tipoReportesOptions);
+    tipoReportesChart.render();
+
+    // Gráfico de evolución de adopciones
+    var evolucionAdopcionesOptions = {
+        series: [{
+            name: "Adopciones",
+            data: [25, 28, 30, 32, 35, 38, 40, 42, 45, 48, 50, 52]
+        }],
+        chart: {
+            height: 350,
+            type: 'area',
+            toolbar: {
+                show: true
+            }
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 3
+        },
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shadeIntensity: 1,
+                opacityFrom: 0.7,
+                opacityTo: 0.3,
+            }
+        },
+        xaxis: {
+            categories: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+        },
+        colors: ['#0acf97'],
+        markers: {
+            size: 5
+        },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return value + " adopciones";
+                }
+            }
+        },
+        annotations: {
+            points: [{
+                x: 'Jun',
+                y: 38,
+                marker: {
+                    size: 8,
+                    fillColor: '#fff',
+                    strokeColor: '#0acf97',
+                    strokeWidth: 2
+                },
+                label: {
+                    borderColor: '#0acf97',
+                    offsetY: 0,
+                    style: {
+                        color: '#fff',
+                        background: '#0acf97',
+                    },
+                    text: 'Campaña "Adopta un Amigo"'
+                }
+            }]
+        }
+    };
+    var evolucionAdopcionesChart = new ApexCharts(document.querySelector("#evolucion-adopciones-chart"), evolucionAdopcionesOptions);
+    evolucionAdopcionesChart.render();
 </script>
