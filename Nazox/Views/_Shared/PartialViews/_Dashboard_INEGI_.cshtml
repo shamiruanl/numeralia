@@ -1,0 +1,130 @@
+<!-- TAB13 - Datos INEGI -->
+<div id="tab13" class="tab-content">
+    <h3>Datos INEGI - Composición de Escobedo</h3>
+    <hr />
+
+    <!-- Sección de Composición Demográfica -->
+    <h4>Composición Demográfica</h4>
+    <div class="row my-2 mx-auto">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Distribución por Género</h4>
+                    <div id="distribucion-genero-chart" class="apex-charts" style="min-height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Pirámide Poblacional Consolidada</h4>
+                    <div id="piramide-consolidada-chart" class="apex-charts" style="min-height: 300px;"></div>
+                    <div class="text-center mt-2">
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-outline-primary active" onclick="actualizarPiramide('10-14')">10-14 años</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="actualizarPiramide('15-19')">15-19 años</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="actualizarPiramide('20-24')">20-24 años</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Datos Territoriales -->
+    <h4 class="mt-4">Datos Territoriales</h4>
+    <div class="row my-2 mx-auto">
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Superficie total</p>
+                    <h4 class="mb-0">149.3 km²</h4>
+                    <p class="text-muted small mb-0">Área geográfica</p>
+                    <div id="superficie-chart" class="mt-2" style="min-height: 80px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Representación estatal</p>
+                    <h4 class="mb-0">0.38%</h4>
+                    <p class="text-muted small mb-0">Del territorio estatal</p>
+                    <div id="territorio-estatal-chart" class="mt-2" style="min-height: 80px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Densidad poblacional</p>
+                    <h4 class="mb-0">1,250 hab/km²</h4>
+                    <div id="densidad-chart" class="mt-2" style="min-height: 80px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Árboles registrados</p>
+                    <h4 class="mb-0">285,000</h4>
+                    <p class="text-muted small mb-0">En áreas urbanas</p>
+                    <div id="arboles-chart" class="mt-2" style="min-height: 80px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Conectividad -->
+    <h4 class="mt-4">Conectividad y Tecnología</h4>
+    <div class="row my-2 mx-auto">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Viviendas con internet</p>
+                    <h4 class="mb-0">78.5%</h4>
+                    <div id="internet-chart" class="mt-2" style="min-height: 250px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Viviendas con computadora</p>
+                    <h4 class="mb-0">65.2%</h4>
+                    <div id="computadora-chart" class="mt-2" style="min-height: 250px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="text-truncate font-size-14 mb-2">Viviendas con celular</p>
+                    <h4 class="mb-0">92.3%</h4>
+                    <div id="celular-chart" class="mt-2" style="min-height: 250px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparativa estatal -->
+    <h3 class="mt-4">Comparativa Estatal</h3>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Indicadores de Conectividad vs Promedio Estatal</h4>
+                    <div id="conectividad-comparativa-chart" class="apex-charts" style="min-height: 350px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Evolución de la Conectividad</h4>
+                    <div id="evolucion-conectividad-chart" class="apex-charts" style="min-height: 350px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

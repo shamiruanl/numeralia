@@ -1405,6 +1405,7 @@
     <Content Include="Views\_Shared\PartialViews\_Dashboard_MUJ.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_MA.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_SAL.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_INEGI_.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
