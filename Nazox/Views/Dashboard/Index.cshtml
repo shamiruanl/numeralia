@@ -213,6 +213,7 @@
             <button class="tab-button" onclick="openTab(event, 'tab11')">Salud</button>
             <button class="tab-button" onclick="openTab(event, 'tab12')">Bienestar Animal</button>
             <button class="tab-button" onclick="openTab(event, 'tab13')">INEGI</button>
+            <button class="tab-button" onclick="openTab(event, 'tab14')">Deporte</button>
         </div>
     </div>
 
@@ -267,6 +268,8 @@
     @Html.Partial("../_Shared/PartialViews/_Dashboard_BA")
     <!--TAB 13 INEGI-->
     @Html.Partial("../_Shared/PartialViews/_Dashboard_INEGI_")
+    <!--TAB 14 DEPORTE-->
+    @Html.Partial("../_Shared/PartialViews/_Dashboard_DEP")
 
     <!--Botón de imprimir-->
     <div class="row mx-auto p-2">
@@ -847,7 +850,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return Math.abs(val) + " personas"
                 }
             }
@@ -907,7 +910,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return Math.abs(val) + " personas"
                 }
             }
@@ -979,7 +982,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return val + "% del total"
                 }
             }
@@ -1020,7 +1023,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return val + " ciudadanos"
                 }
             }
@@ -1028,7 +1031,7 @@
     };
     var ciudadanosServicioChart = new ApexCharts(document.querySelector("#ciudadanos-servicio-chart"), ciudadanosServicioOptions);
     ciudadanosServicioChart.render();
-     // Gráfico de atención a adultos mayores
+    // Gráfico de atención a adultos mayores
     var adultosAtencionOptions = {
         series: [{
             data: [3850, 1250, 1320]
@@ -1057,7 +1060,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return val + " adultos"
                 }
             }
@@ -1150,7 +1153,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return val + " personas"
                 }
             }
@@ -1233,7 +1236,7 @@
         },
         tooltip: {
             y: {
-                formatter: function(val) {
+                formatter: function (val) {
                     return val + " personas"
                 }
             }
@@ -1254,6 +1257,8 @@
 <script src="~/assets/js/dashboard/_dashboard_ma.js" asp-append-version="true"></script>
 <!--tab 11-->
 <script src="~/assets/js/dashboard/_dashboard_sal.js" asp-append-version="true"></script>
+<!--tab 13-->
+<script src="~/assets/js/dashboard/_dashboard_dep.js" asp-append-version="true"></script>
 <!--Script para imprimir el dashboard seleccionado-->
 <script>
     document.getElementById('btnPrintTab').addEventListener('click', function () {

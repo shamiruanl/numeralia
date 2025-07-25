@@ -217,6 +217,7 @@
     <Content Include="assets\js\dashboard\dashboard_tabs_scroll.js" />
     <Content Include="assets\js\dashboard\_dashboard_air.js" />
     <Content Include="assets\js\dashboard\_dashboard_de.js" />
+    <Content Include="assets\js\dashboard\_dashboard_dep.js" />
     <Content Include="assets\js\dashboard\_dashboard_edu.js" />
     <Content Include="assets\js\dashboard\_dashboard_ma.js" />
     <Content Include="assets\js\dashboard\_dashboard_op.js" />
@@ -1397,6 +1398,7 @@
     <Content Include="Views\_Shared\PartialViews\_Dashboard_BA.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DE.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_DIF.cshtml" />
+    <Content Include="Views\_Shared\PartialViews\_Dashboard_DEP.cshtml" />
     <None Include="Views\_Shared\PartialViews\_Dashboard_DU.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_OP.cshtml" />
     <Content Include="Views\_Shared\PartialViews\_Dashboard_SEG.cshtml" />
