@@ -1,58 +1,32 @@
 <!-- TAB11 - SALUD-->
 <div id="tab11" class="tab-content">
-    <h3>Salud</h3>
-    <hr>
-
-    <h4 class="mt-4">Indicadores de Acciones de Salud</h4>
+    <h3>Indicadores de Acciones de Salud</h3>
     <div class="row my-3 mx-auto">
+        <!-- Brigadas -->
         <div class="col-md-3 mb-3">
             <div class="card h-100 shadow-sm">
                 <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                     <p class="font-size-14 mb-2 card-text-wrap">Total de Brigadas</p>
                     <i data-feather="users" class="text-info mb-3" style="width: 36px; height: 36px;"></i>
                     <h3 class="mb-0 text-info card-text-wrap">45</h3>
+                    <span class="badge bg-soft-info text-info mt-2">+12% vs año anterior</span>
                     <p class="text-muted small mt-2 card-text-wrap">Realizadas anualmente</p>
                 </div>
             </div>
         </div>
+        <!-- Fumigaciones -->
         <div class="col-md-3 mb-3">
             <div class="card h-100 shadow-sm">
                 <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                     <p class="font-size-14 mb-2 card-text-wrap">Total de Fumigaciones</p>
                     <i data-feather="cloud-off" class="text-primary mb-3" style="width: 36px; height: 36px;"></i>
                     <h3 class="mb-0 text-primary card-text-wrap">120</h3>
+                    <span class="badge bg-soft-primary text-primary mt-2">70% en escuelas</span>
                     <p class="text-muted small mt-2 card-text-wrap">Eventos de control de plagas</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <h4 class="mt-4">Indicadores de Atenciones Médicas</h4>
-    <div class="row my-3 mx-auto">
-        <div class="col-md-3 mb-3">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
-                    <p class="font-size-14 mb-2 card-text-wrap">Número de Centros Médicos</p>
-                    <i data-feather="hospital" class="text-warning mb-3" style="width: 36px; height: 36px;"></i>
-                    <h3 class="mb-0 text-warning card-text-wrap">5</h3>
-                    <p class="text-muted small mt-2 card-text-wrap">En el municipio</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
-                    <p class="font-size-14 mb-2 card-text-wrap">Total de Atenciones Médicas</p>
-                    <i data-feather="activity" class="text-danger mb-3" style="width: 36px; height: 36px;"></i>
-                    <h3 class="mb-0 text-danger card-text-wrap">15,000</h3>
-                    <p class="text-muted small mt-2 card-text-wrap">Realizadas anualmente</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h4 class="mt-4">Análisis de Distribución en Salud</h4>
-    <div class="row my-3 mx-auto">
+        <!-- Pie Brigadas -->
         <div class="col-md-6 mb-3">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
@@ -61,17 +35,44 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mb-3">
+        <!-- Fumigación -->
+        <div class="col-md-12 mb-3">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
                     <h4 class="card-title mb-4 text-center">Distribución por Lugar de Fumigación</h4>
-                    <div id="salud-fumigacion-bar" class="apex-charts" style="min-height: 300px;"></div>
+                    <div id="salud-fumigacion-bar" class="apex-charts" style="min-height: 320px;"></div>
                 </div>
             </div>
         </div>
     </div>
 
+    <h3 class="mt-4">Indicadores de Atenciones Médicas</h3>
     <div class="row my-3 mx-auto">
+        <!-- Centros Médicos -->
+        <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                    <p class="font-size-14 mb-2 card-text-wrap">Número de Centros Médicos</p>
+                    <i data-feather="home" class="text-warning mb-3" style="width: 36px; height: 36px;"></i>
+                    <h3 class="mb-0 text-warning card-text-wrap">5</h3>
+                    <span class="badge bg-soft-warning text-warning mt-2">Cobertura local</span>
+                    <p class="text-muted small mt-2 card-text-wrap">En el municipio</p>
+                </div>
+            </div>
+        </div>
+        <!-- Atenciones Médicas -->
+        <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                    <p class="font-size-14 mb-2 card-text-wrap">Total de Atenciones Médicas</p>
+                    <i data-feather="activity" class="text-danger mb-3" style="width: 36px; height: 36px;"></i>
+                    <h3 class="mb-0 text-danger card-text-wrap">15,000</h3>
+                    <span class="badge bg-soft-danger text-danger mt-2">+8% este año</span>
+                    <p class="text-muted small mt-2 card-text-wrap">Realizadas anualmente</p>
+                </div>
+            </div>
+        </div>
+        <!-- Atenciones Médicas Pie -->
         <div class="col-md-6 mb-3">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
